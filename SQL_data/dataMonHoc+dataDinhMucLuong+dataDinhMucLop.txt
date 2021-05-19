@@ -1,0 +1,24 @@
+--Dữ liệu môn học
+INSERT dbo.MONHOC (MaMH, TenMH)
+VALUES 
+('MH01', N'Toán'),
+('MH02', N'Vật Lý'),
+('MH03', N'Hóa Học'),
+('MH04', N'Ngữ Văn'),
+('MH05', N'Tiếng Anh')
+GO
+
+--Dữ liệu định mức lương
+INSERT dbo.DINHMUCLUONG(MaDM, LoaiDM, SoTien)
+VALUES 
+('DM01', N'Định mức 1', 500000),
+('DM02', N'Định mức 2', 700000),
+('DM03', N'Định mức 3', 900000)
+GO
+
+-- Dữ liệu định mức lớp
+INSERT dbo.DINHMUCLOP(MaDML, TrinhDoLop, SoTien)
+VALUES 
+('DML01', N'Cơ bản',   90000),
+('DML02', N'Nâng cao', 100000),
+('DML03', N'Chuyên',   120000)

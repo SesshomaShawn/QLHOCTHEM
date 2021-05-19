@@ -1,0 +1,95 @@
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH003' and MaHS = 'HS107'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH019' and MaHS = 'HS180'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH028' and MaHS = 'HS100'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH042' and MaHS = 'HS133'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH070' and MaHS = 'HS156'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH100' and MaHS = 'HS007'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH139' and MaHS = 'HS143'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH155' and MaHS = 'HS198'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH177' and MaHS = 'HS160'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH191' and MaHS = 'HS029'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH205' and MaHS = 'HS149'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH272' and MaHS = 'HS051'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH300' and MaHS = 'HS058'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH333' and MaHS = 'HS181'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH381' and MaHS = 'HS152'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH392' and MaHS = 'HS024'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH402' and MaHS = 'HS123'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH440' and MaHS = 'HS035'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH465' and MaHS = 'HS170'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH498' and MaHS = 'HS150'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH616' and MaHS = 'HS072'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH620' and MaHS = 'HS039'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH628' and MaHS = 'HS094'
+go
+update  DIEMDANH
+set DiemDanh = N'Vắng'
+where MaLichHoc = 'LH634' and MaHS = 'HS107'

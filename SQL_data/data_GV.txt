@@ -1,0 +1,38 @@
+-- MH01 Toan
+INSERT dbo.GIAOVIEN(MaGV, HoTenGV, NgaySinh, DiaChi, GioiTinh, MaMH, MaDM, MatKhau, Email, SDT)
+VALUES
+(N'GV001', N'Nguyễn Hoài Thanh', '1973-02-15', N'TP HCM', N'Nam', 'MH01', 'DM03', 'nguyenhoaithanh', 'NguyenHoaiThanh@gmail.com', '0906191819'),
+(N'GV002', N'Trần Xuân Thấu', '1992-06-20', N'Nghệ An', N'Nam', 'MH01', 'DM01', 'tranxuanthau', 'TranXuanThau@gmail.com', '0773968170'),
+(N'GV003', N'Nguyễn Ngọc Ánh', '1980-05-11', N'Nam Định', N'Nữ', 'MH01', 'DM02', 'nguyenngocanh', 'NguyenNgocAnh@gmail.com', '0810714240'),
+(N'GV004', N'Trương Nam Sơn', '1969-06-20', N'Hải Dương', N'Nam', 'MH01', 'DM03', 'truongnamson', 'TruongNamSon@gmail.com', '0087775413'),
+(N'GV005', N'Lý Hoàng Hà', '1984-10-23', N'TP HCM', N'Nam', 'MH01', 'DM02', 'lyhoangha', 'LyHoangHa@gmail.com', '0275708459')
+
+--MH02 Vat ly
+INSERT dbo.GIAOVIEN(MaGV, HoTenGV, NgaySinh, DiaChi, GioiTinh, MaMH, MaDM, MatKhau, Email, SDT)
+VALUES
+(N'GV006', N'Trần Minh Tiến', '1965-06-27', N'Hà Nội', N'Nam', 'MH02', 'DM03', 'tranminhtien', 'TranMinhTien@gmail.com', '0503358220'),
+(N'GV007', N'Tống Minh Khai', '1979-03-10' , N'Nam Định', N'Nam', 'MH02', 'DM02', 'tongminhkhai', 'TongMinhKhai@gmail.com', '0819295183'),
+(N'GV008', N'Nguyễn Minh Hà', '1961-01-07', N'Sơn La', N'Nữ', 'MH02', 'DM03', 'nguyenminhha', 'NguyenMinhHa@gmail.com', '0290745599'),
+(N'GV009', N'Nguyễn Văn Xuân', '1990-06-30', N'Cao Bằng', N'Nam', 'MH02', 'DM01', 'nguyenvanxuan', 'NguyenVanXuan@gmail.com', '0500235463')
+
+--MH03 hoa hoc
+INSERT dbo.GIAOVIEN(MaGV, HoTenGV, NgaySinh, DiaChi, GioiTinh, MaMH, MaDM, MatKhau, Email, SDT)
+VALUES
+(N'GV010', N'Đặng Lê Đình Trang', '1995-04-18', N'Hải Phòng', N'Nam', 'MH03', 'DM01', 'dangledinhtrang', 'DangLeDinhTrang@gmail.com', '0663854569'),
+(N'GV011', N'Hoàng Tuấn Hảo', '1987-02-28', N'Hưng Yên', N'Nam', 'MH03', 'DM02', 'hoangtuanhao', 'HoangTuanHao@gmail.com', '0498961515'),
+(N'GV012', N'Khuất Văn Thành', '1964-11-05', N'Hà Nam', N'Nam', 'MH03', 'DM03', 'khuatvanthanh', 'KhuatVanThanh@gmail.com', '0885885961'),
+(N'GV013', N'Phan Nhật Anh', '1981-01-02', N'Thanh Hóa', N'Nam', 'MH03', 'DM02', 'phannhatanh', 'PhanNhatAnh@gmail.com', '0968372142')
+
+--MH04 ngu van
+INSERT dbo.GIAOVIEN(MaGV, HoTenGV, NgaySinh, DiaChi, GioiTinh, MaMH, MaDM, MatKhau, Email, SDT)
+VALUES
+(N'GV014', N'Nguyễn Thị Lan', '1976-12-01', N'Nam Định', N'Nữ', 'MH04', 'DM02', 'nguyenthilan', 'NguyenThiLan@gmail.com', '0044518509'),
+(N'GV015', N'Trần Ngọc Minh Châu', '1974-03-15', N'Bắc Ninh', N'Nữ', 'MH04', 'DM02', 'tranngocminhchau', 'TranNgocMinhChau@gmail.com', '0154961967')
+
+--MH05 tieng anh
+INSERT dbo.GIAOVIEN(MaGV, HoTenGV, NgaySinh, DiaChi, GioiTinh, MaMH, MaDM, MatKhau, Email, SDT)
+VALUES
+(N'GV016', N'Nguyễn Trung Đoàn', '1988-08-24', N'Hải Dương', N'Nam', 'MH05', 'DM02', 'nguyentrungdoan', 'NguyenTrungDoan@gmail.com', '0777798369'),
+(N'GV017', N'Vũ Kim Như', '1989-11-02', N'Nam Định', N'Nữ', 'MH05', 'DM02', 'vukimnhu', 'VuKimNhu@gmail.com', '0102581957'),
+(N'GV018', N'Nguyễn Khải Luân', '1982-10-14', N'Hà Nội' , N'Nam' , 'MH05', 'DM03', 'nguyenkhailuan', 'NguyenKhaiLuan@gmail.com', '0127737581')
+GO

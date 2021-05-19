@@ -1,0 +1,50 @@
+--Dữ liệu Khối
+INSERT dbo.KHOI (MaKhoi, TenKhoi)
+VALUES
+('KH01', N'Lớp 10'),
+('KH02', N'Lớp 11'),
+('KH03', N'Lớp 12')
+GO
+
+--Dữ liệu lớp học
+
+-- Lớp Toán
+INSERT dbo.LOPHOC (MaLMH, TenLMH, NgayBatDau, TongSoTiet, MaKhoi, MaGV, MaDML)
+VALUES
+('LMH001', N'Toán 10', 	 '2021-02-03', 64, 'KH01', 'GV002', 'DML01'),
+('LMH002', N'Toán 11',   '2021-02-01', 64, 'KH02', 'GV004', 'DML03'),
+('LMH003', N'Toán 12_1', '2021-02-01', 96, 'KH03', 'GV001', 'DML03'),
+('LMH004', N'Toán 12_2', '2021-02-02', 96, 'KH03', 'GV005', 'DML02'),
+('LMH005', N'Toán 12_3', '2021-02-01', 96, 'KH03', 'GV003', 'DML02')
+
+-- Lớp Lý
+INSERT dbo.LOPHOC (MaLMH, TenLMH, NgayBatDau, TongSoTiet, MaKhoi, MaGV, MaDML)
+VALUES
+('LMH006', N'Lý 10', 	'2021-02-03', 64,  'KH01', 'GV007', 'DML02'),
+('LMH007', N'Lý 11', 	'2021-02-04', 64,  'KH02', 'GV006', 'DML03'),
+('LMH008', N'Lý 12_1', 	'2021-02-01', 96,   'KH03', 'GV009', 'DML01'),
+('LMH009', N'Lý 12_2', 	'2021-02-04', 96, 'KH03', 'GV008', 'DML03')
+
+-- Lớp Hóa
+INSERT dbo.LOPHOC (MaLMH, TenLMH, NgayBatDau, TongSoTiet, MaKhoi, MaGV, MaDML)
+VALUES
+('LMH010', N'Hóa 10', 	'2021-02-02', 64, 'KH01', 'GV010', 'DML01'),
+('LMH011', N'Hóa 11', 	'2021-02-02', 64, 'KH02', 'GV011', 'DML02'),
+('LMH012', N'Hóa 12_1', '2021-02-03', 96, 'KH03', 'GV013', 'DML02'),
+('LMH013', N'Hóa 12_2', '2021-02-04', 96, 'KH03', 'GV012', 'DML03')
+
+-- Lớp Văn
+INSERT dbo.LOPHOC (MaLMH, TenLMH, NgayBatDau, TongSoTiet, MaKhoi, MaGV, MaDML)
+VALUES
+('LMH014', N'Văn 11', 	'2021-02-03', 64, 'KH02', 'GV014', 'DML02'),
+('LMH015', N'Văn 12_1', '2021-02-01', 96, 'KH03', 'GV015', 'DML02'),
+('LMH016', N'Văn 12_2', '2021-02-04', 96, 'KH03', 'GV014', 'DML02')
+
+-- Lớp Anh 
+INSERT dbo.LOPHOC (MaLMH, TenLMH, NgayBatDau, TongSoTiet, MaKhoi, MaGV, MaDML)
+VALUES
+('LMH017', N'Tiếng Anh 10', 	'2021-02-04', 64,  'KH01', 'GV016', 'DML02'),
+('LMH018', N'Tiếng Anh 11', 	'2021-02-02', 64,  'KH02', 'GV016', 'DML02'),
+('LMH019', N'Tiếng Anh 12_1', 	'2021-02-03', 96,  'KH03', 'GV017', 'DML02'),
+('LMH020', N'Tiếng Anh 12_2', 	'2021-02-02', 96, 'KH03', 'GV018', 'DML03')
+GO

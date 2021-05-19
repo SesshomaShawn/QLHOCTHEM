@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLHOCTHEM", "DangNhap\QLHOCTHEM.csproj", "{37580C75-62B3-45D4-A847-67078ABD16CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate", "Generate\Generate.csproj", "{97A3B1A4-593B-408D-9D0D-8BE1D891AC89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37580C75-62B3-45D4-A847-67078ABD16CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37580C75-62B3-45D4-A847-67078ABD16CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37580C75-62B3-45D4-A847-67078ABD16CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37580C75-62B3-45D4-A847-67078ABD16CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A3B1A4-593B-408D-9D0D-8BE1D891AC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A3B1A4-593B-408D-9D0D-8BE1D891AC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A3B1A4-593B-408D-9D0D-8BE1D891AC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A3B1A4-593B-408D-9D0D-8BE1D891AC89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B91D843D-065D-466A-93BD-C21ABA1B2384}
+	EndGlobalSection
+EndGlobal
