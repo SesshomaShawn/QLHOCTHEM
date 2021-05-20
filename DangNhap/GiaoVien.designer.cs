@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiaoVien));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -341,7 +341,7 @@
             this.panel3.Controls.Add(this.dataGridViewHienThiLuong);
             this.panel3.Location = new System.Drawing.Point(223, 37);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1515, 813);
+            this.panel3.Size = new System.Drawing.Size(1375, 763);
             this.panel3.TabIndex = 14;
             // 
             // panel6
@@ -353,7 +353,7 @@
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1249, 249);
+            this.panel6.Size = new System.Drawing.Size(1109, 249);
             this.panel6.TabIndex = 15;
             // 
             // panel7
@@ -366,9 +366,9 @@
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.comboBoxChonThang);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel7.Location = new System.Drawing.Point(944, 16);
+            this.panel7.Location = new System.Drawing.Point(787, 16);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(302, 218);
+            this.panel7.Size = new System.Drawing.Size(288, 218);
             this.panel7.TabIndex = 19;
             // 
             // label9
@@ -605,14 +605,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewHienThiLuong.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewHienThiLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHienThiLuong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaPL,
@@ -626,10 +626,10 @@
             this.dataGridViewHienThiLuong.Name = "dataGridViewHienThiLuong";
             this.dataGridViewHienThiLuong.ReadOnly = true;
             this.dataGridViewHienThiLuong.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewHienThiLuong.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewHienThiLuong.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewHienThiLuong.RowTemplate.Height = 24;
-            this.dataGridViewHienThiLuong.Size = new System.Drawing.Size(1225, 448);
+            this.dataGridViewHienThiLuong.Size = new System.Drawing.Size(1085, 398);
             this.dataGridViewHienThiLuong.TabIndex = 0;
             this.dataGridViewHienThiLuong.Visible = false;
             this.dataGridViewHienThiLuong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHienThiLuong_CellClick);
@@ -641,7 +641,7 @@
             this.MaPL.MinimumWidth = 6;
             this.MaPL.Name = "MaPL";
             this.MaPL.ReadOnly = true;
-            this.MaPL.Width = 180;
+            this.MaPL.Width = 170;
             // 
             // NgayTra
             // 
@@ -650,7 +650,7 @@
             this.NgayTra.MinimumWidth = 6;
             this.NgayTra.Name = "NgayTra";
             this.NgayTra.ReadOnly = true;
-            this.NgayTra.Width = 200;
+            this.NgayTra.Width = 170;
             // 
             // TenLMH
             // 
@@ -659,7 +659,7 @@
             this.TenLMH.MinimumWidth = 6;
             this.TenLMH.Name = "TenLMH";
             this.TenLMH.ReadOnly = true;
-            this.TenLMH.Width = 180;
+            this.TenLMH.Width = 170;
             // 
             // SoTien
             // 
@@ -668,7 +668,7 @@
             this.SoTien.MinimumWidth = 6;
             this.SoTien.Name = "SoTien";
             this.SoTien.ReadOnly = true;
-            this.SoTien.Width = 170;
+            this.SoTien.Width = 130;
             // 
             // SoTietDay
             // 
@@ -678,7 +678,7 @@
             this.SoTietDay.MinimumWidth = 6;
             this.SoTietDay.Name = "SoTietDay";
             this.SoTietDay.ReadOnly = true;
-            this.SoTietDay.Width = 170;
+            this.SoTietDay.Width = 160;
             // 
             // TongTien
             // 
@@ -694,7 +694,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1484, 761);
+            this.ClientSize = new System.Drawing.Size(1344, 711);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
