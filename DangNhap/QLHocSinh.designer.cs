@@ -46,8 +46,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewHS = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.MaHS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTenHS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHS)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -284,28 +281,6 @@
             this.dataGridViewHS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHS_CellClick);
             this.dataGridViewHS.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHS_CellContentDoubleClick);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Location = new System.Drawing.Point(640, 456);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(226, 97);
-            this.panel3.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(73, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(73, 35);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Xóa SV";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // MaHS
             // 
             this.MaHS.DataPropertyName = "MaHS";
@@ -370,7 +345,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Silver;
             this.Controls.Add(this.dataGridViewHS);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "QLHocSinh";
             this.Size = new System.Drawing.Size(1136, 693);
@@ -384,7 +358,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHS)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -394,8 +367,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridViewHS;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;

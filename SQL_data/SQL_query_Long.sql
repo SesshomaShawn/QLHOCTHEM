@@ -295,6 +295,29 @@ BEGIN
 		AND dbo.GIAOVIEN.MaGV=@MaGV
 END 
 sp_LopHoc_GV_AD 'GV010'
+
+
+use QLHOCTHEM EXEC sp_changedbowner 'sa'
+
+-- danh sach cac hoa don chua duoc nop
+CREATE PROC sp_HoaDonChuaNop AS
+BEGIN
+	SELECT DD.MaHS, HS.HoTenHS, HS.Email, HD.TinhTrang, HD.NgayXuat, HD.NgayNop
+	FROM dbo.HOADON HD, dbo.HOCSINH HS, dbo.DIEMDANH DD, dbo.LICHHOC, dbo.LOPHOC
+	WHERE HD.MaHS=HS.MaHS AND HS.MaHS=DD.MaHS AND DD.MaLichHoc=dbo.LICHHOC.MaLichHoc AND dbo.LICHHOC.MaLMH=dbo.LOPHOC.MALMH
+		AND HD.TinhTrang=N'Chưa nộp'
+	GROUP BY DD.MaHS, HD.NgayXuat, HS.HoTenHS, HS.Email, HD.TinhTrang, HD.NgayXuat, HD.NgayNop
+	ORDER BY HS.HoTenHS
+END
+
+
+
+
+
+
+
+
+
 ------------------------------------------------------END-------------------------------------------------
 -----------------------------------------------------------------------------------------------------------
 --1

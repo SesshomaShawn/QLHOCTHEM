@@ -67,13 +67,24 @@ namespace DangNhap
             ad.Fill(ds);
             dsa = ds;
             con.Close();
-            try
-            {
+          //  try
+          //  {
                 tbMaHD.Text = ds.Rows[0][0].ToString();
                 tbMaHS.Text = ds.Rows[0][1].ToString();
                 tbTenHS.Text = ds.Rows[0][2].ToString();
+            try
+            {
                 dateTimePicker1.Value = DateTime.Parse(ds.Rows[0][4].ToString());
+
+            } catch
+            {
+                label5.Visible = false;
+                dateTimePicker1.Visible = false;
+                button1.Visible = true;
+            }
+
                 dateTimePicker2.Value = DateTime.Parse(ds.Rows[0][3].ToString());
+            //MessageBox.Show(dateTimePicker2.Value.ToString());
                 tbSDT.Text = ds.Rows[0][5].ToString();
 
                 int nCount = dataGridView1.RowCount;
@@ -87,10 +98,10 @@ namespace DangNhap
 
                 tbTongTiet.Text = tongtiet.ToString();
                 tbTongTien.Text = formatDecimal(tongtien.ToString());
-            } catch (Exception)
+           /* } catch (Exception)
             {
                 MessageBox.Show("Chưa có dữ liệu!");
-            }
+            }*/
 
         }
 
@@ -109,7 +120,7 @@ namespace DangNhap
         }
 
 
-
+        #region begin
         private void button1_Click(object sender, EventArgs e)
         {
             // Khởi động chương trình Excel
@@ -330,6 +341,7 @@ namespace DangNhap
             } while (ty > 0);
             return chuoi + " đồng";
         }
+        #endregion
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -349,6 +361,31 @@ namespace DangNhap
             {
                 MessageBox.Show("Hóa đơn chưa được hủy");
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            DateTime d = DateTime.Now;
+            //MessageBox.Show(d.ToString());
+            SqlConnection con = new SqlConnection();
+            con = cn.GetConnection();
+            con.Open();
+            //MessageBox.Show(tbMaHD.Text + "," + d.ToString("yyyy-MM-dd") + ", " + dateTimePicker2.Value.ToString() + ", " + Convert.ToInt32(tongtien.ToString()) + ", " + tbMaHS.Text);
+            SqlCommand cmd = new SqlCommand("UPDATE HOADON SET NgayNop=@NgayNop,NgayXuat=@NgayXuat,SoTienNop=@SoTienNop, TinhTrang=@TinhTrang, MaHS=@MaHS WHERE (MaHD=@MaHD)", con);
+
+            cmd.Parameters.AddWithValue("@MaHD", tbMaHD.Text);
+            cmd.Parameters.AddWithValue("@NgayNop", d.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@NgayXuat", dateTimePicker2.Value.ToString());
+            cmd.Parameters.AddWithValue("@SoTienNop", Convert.ToInt32(tongtien.ToString()));
+            cmd.Parameters.AddWithValue("@TinhTrang", "Đã nộp");
+            cmd.Parameters.AddWithValue("@MaHS", tbMaHS.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Cập nhật thành công!");
         }
     }
 }
