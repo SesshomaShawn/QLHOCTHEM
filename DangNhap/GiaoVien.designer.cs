@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiaoVien));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -470,6 +470,8 @@
             // 
             // textBoxNgayTra
             // 
+            this.textBoxNgayTra.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBoxNgayTra.Enabled = false;
             this.textBoxNgayTra.Location = new System.Drawing.Point(450, 104);
             this.textBoxNgayTra.Name = "textBoxNgayTra";
             this.textBoxNgayTra.ReadOnly = true;
@@ -478,6 +480,8 @@
             // 
             // textBoxGT
             // 
+            this.textBoxGT.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBoxGT.Enabled = false;
             this.textBoxGT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGT.Location = new System.Drawing.Point(110, 104);
             this.textBoxGT.Name = "textBoxGT";
@@ -601,14 +605,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewHienThiLuong.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewHienThiLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHienThiLuong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaPL,
@@ -622,8 +626,8 @@
             this.dataGridViewHienThiLuong.Name = "dataGridViewHienThiLuong";
             this.dataGridViewHienThiLuong.ReadOnly = true;
             this.dataGridViewHienThiLuong.RowHeadersWidth = 51;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewHienThiLuong.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewHienThiLuong.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewHienThiLuong.RowTemplate.Height = 24;
             this.dataGridViewHienThiLuong.Size = new System.Drawing.Size(1211, 392);
             this.dataGridViewHienThiLuong.TabIndex = 0;
@@ -685,27 +689,6 @@
             this.TongTien.Name = "TongTien";
             this.TongTien.ReadOnly = true;
             // 
-            // textBoxGT
-            // 
-            this.textBoxGT.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBoxGT.Enabled = false;
-            this.textBoxGT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGT.Location = new System.Drawing.Point(110, 104);
-            this.textBoxGT.Name = "textBoxGT";
-            this.textBoxGT.ReadOnly = true;
-            this.textBoxGT.Size = new System.Drawing.Size(209, 29);
-            this.textBoxGT.TabIndex = 18;
-            // 
-            // textBoxNgayTra
-            // 
-            this.textBoxNgayTra.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBoxNgayTra.Enabled = false;
-            this.textBoxNgayTra.Location = new System.Drawing.Point(450, 104);
-            this.textBoxNgayTra.Name = "textBoxNgayTra";
-            this.textBoxNgayTra.ReadOnly = true;
-            this.textBoxNgayTra.Size = new System.Drawing.Size(209, 26);
-            this.textBoxNgayTra.TabIndex = 19;
-            // 
             // GiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -720,7 +703,6 @@
             this.Name = "GiaoVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GiaoVien";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GiaoVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
