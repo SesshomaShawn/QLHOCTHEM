@@ -71,7 +71,8 @@ namespace DangNhap
             Tiet_Toan.Text = DtViewToan.Rows[0].Cells["SoTiet"].Value.ToString();
             GV_Toan.Text = DtViewToan.Rows[0].Cells["HoTenGV"].Value.ToString();
             ML_Toan.Text = DtViewToan.Rows[0].Cells["MaLMH"].Value.ToString();
-            Ngay_Toan.Text = DtViewToan.Rows[0].Cells["NgayHoc"].Value.ToString();
+            string ngay = DtViewToan.Rows[0].Cells["NgayHoc"].Value.ToString();
+            Ngay_Toan.Text = ngay.Substring(0, ngay.IndexOf(' '));
             Kip_Toan.Text = DtViewToan.Rows[0].Cells["KipHoc"].Value.ToString();
         }
 
@@ -84,7 +85,9 @@ namespace DangNhap
                 Tiet_Toan.Text = row.Cells["SoTiet"].Value.ToString();
                 GV_Toan.Text = row.Cells["HoTenGV"].Value.ToString();
                 ML_Toan.Text = row.Cells["MaLMH"].Value.ToString();
-                Ngay_Toan.Text = row.Cells["NgayHoc"].Value.ToString();
+                string ngay = row.Cells["NgayHoc"].Value.ToString();
+                Ngay_Toan.Text = ngay.Substring(0, ngay.IndexOf(' '));
+                ngay = row.Cells["NgayHoc"].Value.ToString();
                 Kip_Toan.Text = row.Cells["KipHoc"].Value.ToString();
 
 
