@@ -641,7 +641,7 @@
             this.MaPL.MinimumWidth = 6;
             this.MaPL.Name = "MaPL";
             this.MaPL.ReadOnly = true;
-            this.MaPL.Width = 200;
+            this.MaPL.Width = 180;
             // 
             // NgayTra
             // 
@@ -650,7 +650,7 @@
             this.NgayTra.MinimumWidth = 6;
             this.NgayTra.Name = "NgayTra";
             this.NgayTra.ReadOnly = true;
-            this.NgayTra.Width = 220;
+            this.NgayTra.Width = 200;
             // 
             // TenLMH
             // 
@@ -659,7 +659,7 @@
             this.TenLMH.MinimumWidth = 6;
             this.TenLMH.Name = "TenLMH";
             this.TenLMH.ReadOnly = true;
-            this.TenLMH.Width = 220;
+            this.TenLMH.Width = 180;
             // 
             // SoTien
             // 
@@ -678,7 +678,7 @@
             this.SoTietDay.MinimumWidth = 6;
             this.SoTietDay.Name = "SoTietDay";
             this.SoTietDay.ReadOnly = true;
-            this.SoTietDay.Width = 200;
+            this.SoTietDay.Width = 170;
             // 
             // TongTien
             // 
@@ -756,15 +756,15 @@
         private System.Windows.Forms.ComboBox combonămChonNam;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btn_logout;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxGT;
+        private System.Windows.Forms.TextBox textBoxNgayTra;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPL;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTra;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenLMH;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTietDay;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
-        private System.Windows.Forms.Button btn_logout;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxGT;
-        private System.Windows.Forms.TextBox textBoxNgayTra;
     }
 }
