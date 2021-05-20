@@ -16,6 +16,7 @@ namespace DangNhap
         private Connection cn;
         private string maGV = GiaoVien.TimMaGV();
         private static LichDay _instance;
+        DataSet dt = null;
         public LichDay()
         {
             cn = new Connection();
@@ -53,60 +54,21 @@ namespace DangNhap
 
         public string MaGV { get => maGV; set => maGV = value; }
 
-        private void CbbTenlop_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection();
-            con = cn.GetConnection();
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "XemLichDay";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@MaGV", SqlDbType.NChar, 10).Value = maGV;
-            cmd.Parameters.Add("@TenMH", SqlDbType.NChar, 30).Value = cbbTenlop.SelectedItem;
-            cmd.Connection = con;
-            DataSet dt = new DataSet();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            DtViewToan.DataSource = dt.Tables[0];
-            LH_Toan.Text = DtViewToan.Rows[0].Cells["MaLichHoc"].Value.ToString();
-            Tiet_Toan.Text = DtViewToan.Rows[0].Cells["SoTiet"].Value.ToString();
-            GV_Toan.Text = DtViewToan.Rows[0].Cells["HoTenGV"].Value.ToString();
-            ML_Toan.Text = DtViewToan.Rows[0].Cells["MaLMH"].Value.ToString();
-            string ngay = DtViewToan.Rows[0].Cells["NgayHoc"].Value.ToString();
-            Ngay_Toan.Text = ngay.Substring(0, ngay.IndexOf(' '));
-            Kip_Toan.Text = DtViewToan.Rows[0].Cells["KipHoc"].Value.ToString();
-        }
-
-        private void DtViewToan_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.DtViewToan.Rows[e.RowIndex];
-                LH_Toan.Text = row.Cells["MaLichHoc"].Value.ToString();
-                Tiet_Toan.Text = row.Cells["SoTiet"].Value.ToString();
-                GV_Toan.Text = row.Cells["HoTenGV"].Value.ToString();
-                ML_Toan.Text = row.Cells["MaLMH"].Value.ToString();
-                string ngay = row.Cells["NgayHoc"].Value.ToString();
-                Ngay_Toan.Text = ngay.Substring(0, ngay.IndexOf(' '));
-                ngay = row.Cells["NgayHoc"].Value.ToString();
-                Kip_Toan.Text = row.Cells["KipHoc"].Value.ToString();
-
-
-            }
-        }
 
         private void LichDay_Load(object sender, EventArgs e)
         {
-            DtViewToan.BorderStyle = BorderStyle.None;
-            DtViewToan.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            DtViewToan.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            DtViewToan.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
-            DtViewToan.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            DtViewToan.BackgroundColor = Color.White;
+            dataGridView_Lich.BorderStyle = BorderStyle.None;
+            dataGridView_Lich.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridView_Lich.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView_Lich.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dataGridView_Lich.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridView_Lich.BackgroundColor = Color.White;
 
-            DtViewToan.EnableHeadersVisualStyles = false;
-            DtViewToan.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            DtViewToan.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            DtViewToan.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridView_Lich.EnableHeadersVisualStyles = false;
+            dataGridView_Lich.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView_Lich.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dataGridView_Lich.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridView_Lich.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
             SqlConnection con = new SqlConnection();
             con = cn.GetConnection();
             SqlCommand cmd = new SqlCommand();
@@ -123,78 +85,42 @@ namespace DangNhap
             foreach (DataRow row in dt.Tables[0].Rows)
             {
                 //MessageBox.Show(row["TegnLMH"].ToString());
-                cbbTenlop.Items.Add(row["TenLMH"].ToString());
+                cbbTenLop.Items.Add(row["TenLMH"].ToString());
             }
         }
 
-        private void label7_Click(object sender, EventArgs e)
+       
+        
+        private void cbbTenLop_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
+            SqlConnection con = new SqlConnection();
+            con = cn.GetConnection();
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "XemLichDay";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@MaGV", SqlDbType.NChar, 10).Value = maGV;
+            cmd.Parameters.Add("@TenMH", SqlDbType.NChar, 30).Value = cbbTenLop.SelectedItem;
+            cmd.Connection = con;
+            DataSet dt = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView_Lich.DataSource = dt.Tables[0];
+            con.Close();
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void dataGridView_Lich_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void GV_Toan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ML_Toan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Ngay_Toan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Kip_Toan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tiet_Toan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LH_Toan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void DtViewToan_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            int vt = e.RowIndex;
+            if (vt >= 0)
+            {
+                DataGridViewRow row = this.dataGridView_Lich.Rows[e.RowIndex];
+                textBoxSoTiet.Text = row.Cells["SoTiet"].Value.ToString();
+                textBoxHoTen.Text = row.Cells["HoTenGV"].Value.ToString();
+                DateTime date = (DateTime) row.Cells["NgayHoc"].Value;
+                textBoxNgayHoc.Text = date.ToString("dd/MM/yyyy");
+                textBoxKip.Text = row.Cells["KipHoc"].Value.ToString();
+            }
         }
     }
 
