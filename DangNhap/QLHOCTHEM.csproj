@@ -8,11 +8,12 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>DangNhap</RootNamespace>
     <AssemblyName>DangNhap</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -245,6 +246,18 @@
     <Compile Include="Thongke.designer.cs">
       <DependentUpon>Thongke.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimKiem_LichDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimKiem_LichDay.Designer.cs">
+      <DependentUpon>TimKiem_LichDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem_LichDay_Ngay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimKiem_LichDay_Ngay.Designer.cs">
+      <DependentUpon>TimKiem_LichDay_Ngay.cs</DependentUpon>
+    </Compile>
     <Compile Include="TK_GiaoVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -354,6 +367,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Thongke.resx">
       <DependentUpon>Thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem_LichDay.resx">
+      <DependentUpon>TimKiem_LichDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem_LichDay_Ngay.resx">
+      <DependentUpon>TimKiem_LichDay_Ngay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TK_GiaoVien.resx">
       <DependentUpon>TK_GiaoVien.cs</DependentUpon>
