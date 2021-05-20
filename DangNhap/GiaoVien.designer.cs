@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiaoVien));
 
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+
 
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
@@ -41,15 +43,12 @@
             this.btn_logout = new System.Windows.Forms.Button();
             this.btn_TrangChu = new System.Windows.Forms.Button();
             this.btn_DoiMK = new System.Windows.Forms.Button();
-            this.panel_LichHoc = new System.Windows.Forms.Panel();
-            this.btn_Anh = new System.Windows.Forms.Button();
-            this.tbn_Van = new System.Windows.Forms.Button();
-            this.btn_Hoa = new System.Windows.Forms.Button();
-            this.btn_Li = new System.Windows.Forms.Button();
-            this.btn_Toan = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonXem_theotg = new System.Windows.Forms.Button();
+            this.buttonXem_TheoNgay = new System.Windows.Forms.Button();
+            this.buttonXem_theoLop = new System.Windows.Forms.Button();
             this.btn_XemLichDay = new System.Windows.Forms.Button();
             this.btn_XemLuong = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -82,7 +81,7 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel_LichHoc.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -135,7 +134,7 @@
             this.panel4.Controls.Add(this.btn_logout);
             this.panel4.Controls.Add(this.btn_TrangChu);
             this.panel4.Controls.Add(this.btn_DoiMK);
-            this.panel4.Controls.Add(this.panel_LichHoc);
+            this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.btn_XemLichDay);
             this.panel4.Controls.Add(this.btn_XemLuong);
             this.panel4.Location = new System.Drawing.Point(-1, 139);
@@ -152,11 +151,11 @@
             this.btn_logout.ForeColor = System.Drawing.Color.Black;
             this.btn_logout.Image = global::DangNhap.Properties.Resources.log_out;
             this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btn_logout.Location = new System.Drawing.Point(0, 436);
+            this.btn_logout.Location = new System.Drawing.Point(0, 355);
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Size = new System.Drawing.Size(217, 50);
             this.btn_logout.TabIndex = 24;
-            this.btn_logout.Text = "Đăng xuất";
+            this.btn_logout.Text = "  Đăng xuất";
             this.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
@@ -167,13 +166,13 @@
             this.btn_TrangChu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_TrangChu.FlatAppearance.BorderSize = 0;
             this.btn_TrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TrangChu.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TrangChu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TrangChu.ForeColor = System.Drawing.Color.Black;
             this.btn_TrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btn_TrangChu.Image")));
             this.btn_TrangChu.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btn_TrangChu.Location = new System.Drawing.Point(0, 374);
+            this.btn_TrangChu.Location = new System.Drawing.Point(0, 305);
             this.btn_TrangChu.Name = "btn_TrangChu";
-            this.btn_TrangChu.Size = new System.Drawing.Size(217, 62);
+            this.btn_TrangChu.Size = new System.Drawing.Size(217, 50);
             this.btn_TrangChu.TabIndex = 4;
             this.btn_TrangChu.Text = "    Trang chủ";
             this.btn_TrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,13 +188,13 @@
             this.btn_DoiMK.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_DoiMK.FlatAppearance.BorderSize = 0;
             this.btn_DoiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DoiMK.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DoiMK.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ForeColor = System.Drawing.Color.Black;
-            this.btn_DoiMK.Image = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.Image")));
+            this.btn_DoiMK.Image = global::DangNhap.Properties.Resources.edit;
             this.btn_DoiMK.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btn_DoiMK.Location = new System.Drawing.Point(0, 312);
+            this.btn_DoiMK.Location = new System.Drawing.Point(0, 255);
             this.btn_DoiMK.Name = "btn_DoiMK";
-            this.btn_DoiMK.Size = new System.Drawing.Size(217, 62);
+            this.btn_DoiMK.Size = new System.Drawing.Size(217, 50);
             this.btn_DoiMK.TabIndex = 9;
             this.btn_DoiMK.Text = "Đổi mật khẩu";
             this.btn_DoiMK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,102 +204,89 @@
             this.btn_DoiMK.MouseEnter += new System.EventHandler(this.btn_DoiMK_MouseEnter);
             this.btn_DoiMK.MouseLeave += new System.EventHandler(this.btn_DoiMK_MouseLeave);
             // 
-            // panel_LichHoc
+            // panel2
             // 
-            this.panel_LichHoc.Controls.Add(this.btn_Anh);
-            this.panel_LichHoc.Controls.Add(this.tbn_Van);
-            this.panel_LichHoc.Controls.Add(this.btn_Hoa);
-            this.panel_LichHoc.Controls.Add(this.btn_Li);
-            this.panel_LichHoc.Controls.Add(this.btn_Toan);
-            this.panel_LichHoc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_LichHoc.Location = new System.Drawing.Point(0, 126);
-            this.panel_LichHoc.Name = "panel_LichHoc";
-            this.panel_LichHoc.Size = new System.Drawing.Size(217, 186);
-            this.panel_LichHoc.TabIndex = 11;
+            this.panel2.Controls.Add(this.buttonXem_theotg);
+            this.panel2.Controls.Add(this.buttonXem_TheoNgay);
+            this.panel2.Controls.Add(this.buttonXem_theoLop);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 100);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(217, 155);
+            this.panel2.TabIndex = 25;
             // 
-            // btn_Anh
+            // buttonXem_theotg
             // 
-            this.btn_Anh.FlatAppearance.BorderSize = 0;
-            this.btn_Anh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Anh.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Anh.ForeColor = System.Drawing.Color.Black;
-            this.btn_Anh.Location = new System.Drawing.Point(-1, 149);
-            this.btn_Anh.Name = "btn_Anh";
-            this.btn_Anh.Size = new System.Drawing.Size(218, 38);
-            this.btn_Anh.TabIndex = 4;
-            this.btn_Anh.Text = " Tiếng Anh";
-            this.btn_Anh.UseVisualStyleBackColor = true;
+            this.buttonXem_theotg.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonXem_theotg.FlatAppearance.BorderSize = 0;
+            this.buttonXem_theotg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXem_theotg.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXem_theotg.ForeColor = System.Drawing.Color.Black;
+            this.buttonXem_theotg.Location = new System.Drawing.Point(0, 100);
+            this.buttonXem_theotg.Name = "buttonXem_theotg";
+            this.buttonXem_theotg.Size = new System.Drawing.Size(217, 50);
+            this.buttonXem_theotg.TabIndex = 5;
+            this.buttonXem_theotg.Text = "         Theo thời gian";
+            this.buttonXem_theotg.UseVisualStyleBackColor = true;
+            this.buttonXem_theotg.Click += new System.EventHandler(this.buttonXem_theotg_Click);
+            this.buttonXem_theotg.MouseEnter += new System.EventHandler(this.buttonXem_theotg_MouseEnter);
+            this.buttonXem_theotg.MouseLeave += new System.EventHandler(this.buttonXem_theotg_MouseLeave);
             // 
-            // tbn_Van
+            // buttonXem_TheoNgay
             // 
-            this.tbn_Van.FlatAppearance.BorderSize = 0;
-            this.tbn_Van.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tbn_Van.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbn_Van.ForeColor = System.Drawing.Color.Black;
-            this.tbn_Van.Location = new System.Drawing.Point(-1, 112);
-            this.tbn_Van.Name = "tbn_Van";
-            this.tbn_Van.Size = new System.Drawing.Size(218, 37);
-            this.tbn_Van.TabIndex = 3;
-            this.tbn_Van.Text = "Văn học   ";
-            this.tbn_Van.UseVisualStyleBackColor = true;
+            this.buttonXem_TheoNgay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonXem_TheoNgay.FlatAppearance.BorderSize = 0;
+            this.buttonXem_TheoNgay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXem_TheoNgay.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXem_TheoNgay.ForeColor = System.Drawing.Color.Black;
+            this.buttonXem_TheoNgay.Location = new System.Drawing.Point(0, 50);
+            this.buttonXem_TheoNgay.Name = "buttonXem_TheoNgay";
+            this.buttonXem_TheoNgay.Size = new System.Drawing.Size(217, 50);
+            this.buttonXem_TheoNgay.TabIndex = 4;
+            this.buttonXem_TheoNgay.Text = "    Theo ngày";
+            this.buttonXem_TheoNgay.UseVisualStyleBackColor = true;
+            this.buttonXem_TheoNgay.Click += new System.EventHandler(this.buttonXem_TheoNgay_Click);
+            this.buttonXem_TheoNgay.MouseEnter += new System.EventHandler(this.buttonXem_TheoNgay_MouseEnter);
+            this.buttonXem_TheoNgay.MouseLeave += new System.EventHandler(this.buttonXem_TheoNgay_MouseLeave);
             // 
-            // btn_Hoa
+            // buttonXem_theoLop
             // 
-            this.btn_Hoa.FlatAppearance.BorderSize = 0;
-            this.btn_Hoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Hoa.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Hoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_Hoa.Location = new System.Drawing.Point(0, 76);
-            this.btn_Hoa.Name = "btn_Hoa";
-            this.btn_Hoa.Size = new System.Drawing.Size(217, 37);
-            this.btn_Hoa.TabIndex = 2;
-            this.btn_Hoa.Text = "Hóa học  ";
-            this.btn_Hoa.UseVisualStyleBackColor = true;
-            // 
-            // btn_Li
-            // 
-            this.btn_Li.FlatAppearance.BorderSize = 0;
-            this.btn_Li.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Li.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Li.ForeColor = System.Drawing.Color.Black;
-            this.btn_Li.Location = new System.Drawing.Point(0, 39);
-            this.btn_Li.Name = "btn_Li";
-            this.btn_Li.Size = new System.Drawing.Size(217, 37);
-            this.btn_Li.TabIndex = 1;
-            this.btn_Li.Text = "Vật Lí       ";
-            this.btn_Li.UseVisualStyleBackColor = true;
-            // 
-            // btn_Toan
-            // 
-            this.btn_Toan.FlatAppearance.BorderSize = 0;
-            this.btn_Toan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Toan.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Toan.ForeColor = System.Drawing.Color.Black;
-            this.btn_Toan.Location = new System.Drawing.Point(0, 3);
-            this.btn_Toan.Name = "btn_Toan";
-            this.btn_Toan.Size = new System.Drawing.Size(217, 37);
-            this.btn_Toan.TabIndex = 0;
-            this.btn_Toan.Text = "Toán        ";
-            this.btn_Toan.UseVisualStyleBackColor = true;
+            this.buttonXem_theoLop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonXem_theoLop.FlatAppearance.BorderSize = 0;
+            this.buttonXem_theoLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXem_theoLop.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXem_theoLop.ForeColor = System.Drawing.Color.Black;
+            this.buttonXem_theoLop.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonXem_theoLop.Location = new System.Drawing.Point(0, 0);
+            this.buttonXem_theoLop.Name = "buttonXem_theoLop";
+            this.buttonXem_theoLop.Size = new System.Drawing.Size(217, 50);
+            this.buttonXem_theoLop.TabIndex = 4;
+            this.buttonXem_theoLop.Text = "  Theo lớp";
+            this.buttonXem_theoLop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonXem_theoLop.UseVisualStyleBackColor = true;
+            this.buttonXem_theoLop.Click += new System.EventHandler(this.buttonXem_theoLop_Click);
+            this.buttonXem_theoLop.MouseEnter += new System.EventHandler(this.buttonXem_theoLop_MouseEnter);
+            this.buttonXem_theoLop.MouseLeave += new System.EventHandler(this.buttonXem_theoLop_MouseLeave);
             // 
             // btn_XemLichDay
             // 
-            this.btn_XemLichDay.BackColor = System.Drawing.Color.Silver;
             this.btn_XemLichDay.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_XemLichDay.FlatAppearance.BorderSize = 0;
             this.btn_XemLichDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XemLichDay.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XemLichDay.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XemLichDay.ForeColor = System.Drawing.Color.Black;
             this.btn_XemLichDay.Image = global::DangNhap.Properties.Resources.calendar;
             this.btn_XemLichDay.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btn_XemLichDay.Location = new System.Drawing.Point(0, 59);
+            this.btn_XemLichDay.Location = new System.Drawing.Point(0, 50);
             this.btn_XemLichDay.Name = "btn_XemLichDay";
-            this.btn_XemLichDay.Size = new System.Drawing.Size(217, 67);
+            this.btn_XemLichDay.Size = new System.Drawing.Size(217, 50);
             this.btn_XemLichDay.TabIndex = 8;
             this.btn_XemLichDay.Text = "Xem lịch dạy";
             this.btn_XemLichDay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_XemLichDay.UseVisualStyleBackColor = false;
             this.btn_XemLichDay.Click += new System.EventHandler(this.btn_XemLichDay_Click);
+            this.btn_XemLichDay.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_XemLichDay_MouseClick);
             this.btn_XemLichDay.MouseEnter += new System.EventHandler(this.btn_XemLichDay_MouseEnter);
             this.btn_XemLichDay.MouseLeave += new System.EventHandler(this.btn_XemLichDay_MouseLeave);
             // 
@@ -310,52 +296,45 @@
             this.btn_XemLuong.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_XemLuong.FlatAppearance.BorderSize = 0;
             this.btn_XemLuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XemLuong.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XemLuong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XemLuong.ForeColor = System.Drawing.Color.Black;
             this.btn_XemLuong.Image = global::DangNhap.Properties.Resources.salary__1_;
             this.btn_XemLuong.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btn_XemLuong.Location = new System.Drawing.Point(0, 0);
             this.btn_XemLuong.Name = "btn_XemLuong";
-            this.btn_XemLuong.Size = new System.Drawing.Size(217, 59);
+            this.btn_XemLuong.Size = new System.Drawing.Size(217, 50);
             this.btn_XemLuong.TabIndex = 7;
-            this.btn_XemLuong.Text = "Xem lương";
+            this.btn_XemLuong.Text = "  Xem lương";
             this.btn_XemLuong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_XemLuong.UseVisualStyleBackColor = false;
             this.btn_XemLuong.Click += new System.EventHandler(this.btn_XemLuong_Click);
             this.btn_XemLuong.MouseEnter += new System.EventHandler(this.btn_XemLuong_MouseEnter);
             this.btn_XemLuong.MouseLeave += new System.EventHandler(this.btn_XemLuong_MouseLeave);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Location = new System.Drawing.Point(220, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1009, 37);
-            this.panel2.TabIndex = 13;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.BackColor = System.Drawing.Color.DarkGray;
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.dataGridViewHienThiLuong);
-            this.panel3.Location = new System.Drawing.Point(223, 37);
+            this.panel3.Location = new System.Drawing.Point(226, -1);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1375, 763);
+            this.panel3.Size = new System.Drawing.Size(1372, 801);
             this.panel3.TabIndex = 14;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BackColor = System.Drawing.Color.Silver;
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.panel8);
-            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Location = new System.Drawing.Point(25, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1109, 249);
+            this.panel6.Size = new System.Drawing.Size(1081, 249);
             this.panel6.TabIndex = 15;
             // 
             // panel7
@@ -368,7 +347,7 @@
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.comboBoxChonThang);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel7.Location = new System.Drawing.Point(787, 16);
+            this.panel7.Location = new System.Drawing.Point(759, 16);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(288, 218);
             this.panel7.TabIndex = 19;
@@ -608,6 +587,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewHienThiLuong.BackgroundColor = System.Drawing.Color.White;
 
+
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -616,6 +596,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+
 
             this.dataGridViewHienThiLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHienThiLuong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -635,7 +616,7 @@
             this.dataGridViewHienThiLuong.RowsDefaultCellStyle = dataGridViewCellStyle4;
 
             this.dataGridViewHienThiLuong.RowTemplate.Height = 24;
-            this.dataGridViewHienThiLuong.Size = new System.Drawing.Size(1085, 398);
+            this.dataGridViewHienThiLuong.Size = new System.Drawing.Size(1082, 436);
             this.dataGridViewHienThiLuong.TabIndex = 0;
             this.dataGridViewHienThiLuong.Visible = false;
             this.dataGridViewHienThiLuong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHienThiLuong_CellClick);
@@ -702,7 +683,6 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1344, 711);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -714,7 +694,7 @@
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.panel_LichHoc.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -731,17 +711,8 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btn_TrangChu;
-        private System.Windows.Forms.Button btn_DoiMK;
-        private System.Windows.Forms.Panel panel_LichHoc;
-        private System.Windows.Forms.Button btn_Anh;
-        private System.Windows.Forms.Button tbn_Van;
-        private System.Windows.Forms.Button btn_Hoa;
-        private System.Windows.Forms.Button btn_Li;
-        private System.Windows.Forms.Button btn_Toan;
         private System.Windows.Forms.Button btn_XemLichDay;
         private System.Windows.Forms.Button btn_XemLuong;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridViewHienThiLuong;
         private System.Windows.Forms.Label label1;
@@ -762,7 +733,6 @@
         private System.Windows.Forms.ComboBox combonămChonNam;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btn_logout;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxGT;
         private System.Windows.Forms.TextBox textBoxNgayTra;
@@ -772,5 +742,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTietDay;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button buttonXem_theoLop;
+        private System.Windows.Forms.Button buttonXem_TheoNgay;
+        private System.Windows.Forms.Button buttonXem_theotg;
+        private System.Windows.Forms.Button btn_DoiMK;
+        private System.Windows.Forms.Button btn_TrangChu;
+        private System.Windows.Forms.Button btn_logout;
     }
 }

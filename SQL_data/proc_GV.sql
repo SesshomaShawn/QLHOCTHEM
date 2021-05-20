@@ -1,4 +1,4 @@
-use QLHOCTHEM
+﻿use QLHOCTHEM
 go
 CREATE PROC [dbo].[XemLuong](@MaGV nchar(10), @thang int, @nam int)
 AS
@@ -56,3 +56,32 @@ BEGIN
 	      AND LICHHOC.MaGV = @MaGV AND dbo.LOPHOC.TenLMH LIKE '%'+RTRIM(@TenMH)+'%'
 END
 go
+--- tìm kiếm lịch dạy trong 1 ngày cụ thể
+create proc Search_lichday_theoNgay (@MaGV char(10),@day date)
+as 
+begin
+	SELECT MaLichHoc, TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+	FROM LICHHOC, LOPHOC, GIAOVIEN
+	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV AND GIAOVIEN.MaGV = LICHHOC.MaGV AND LICHHOC.MaLMH = dbo.LOPHOC.MaLMH AND LICHHOC.MaGV = dbo.LOPHOC.MaGV
+	      AND LICHHOC.MaGV = @MaGV 
+		  and NgayHoc = @day 
+end
+
+drop proc Search_lichday_theoNgay
+
+exec Search_lichday_theoNgay 'GV016','2021-02-04'
+
+--- Tìm kiếm lịch dạy trong 1 khoảng thời gian
+go
+create proc Search_lichday (@MaGV char(10),@day1 date, @day2 date)
+as 
+begin
+	SELECT MaLichHoc, TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+	FROM LICHHOC, LOPHOC, GIAOVIEN
+	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV AND GIAOVIEN.MaGV = LICHHOC.MaGV AND LICHHOC.MaLMH = dbo.LOPHOC.MaLMH AND LICHHOC.MaGV = dbo.LOPHOC.MaGV
+	      AND LICHHOC.MaGV = @MaGV 
+		  and NgayHoc between @day1 and @day2
+end
+
+drop proc Search_lichday
+exec Search_lichday 'GV016','2021-02-04', '2021-02-11'

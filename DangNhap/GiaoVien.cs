@@ -24,7 +24,7 @@ namespace DangNhap
         SqlDataAdapter adapter = null;
         DataSet dataSet = null;
 
-        
+
         public string Pass { get => pass; set => pass = value; }
 
         public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
@@ -48,22 +48,23 @@ namespace DangNhap
         }
         public void MacDinh()
         {
-            panel_LichHoc.Visible = false;
+            panel2.Visible = false;
         }
-        public void AnLichHoc()
+        public void AnLichDay()
         {
-            if (panel_LichHoc.Visible == true)
-                panel_LichHoc.Visible = false;
+            if (panel2.Visible == true)
+                panel2.Visible = false;
         }
-        public void HienLichHoc()
+        public void HienLichDay()
         {
-            if (panel_LichHoc.Visible == false)
+            if (panel2.Visible == false)
             {
-                AnLichHoc();
-                panel_LichHoc.Visible = true;
+                AnLichDay();
+                panel2.Visible = true;
             }
-            else panel_LichHoc.Visible = false;
+            else panel2.Visible = false;
         }
+
 
         private void btn_XemLuong_MouseEnter(object sender, EventArgs e)
         {
@@ -85,6 +86,7 @@ namespace DangNhap
             btn_XemLichDay.BackColor = System.Drawing.Color.Silver;
         }
 
+
         private void btn_DoiMK_MouseEnter(object sender, EventArgs e)
         {
             btn_DoiMK.BackColor = System.Drawing.Color.DarkGray;
@@ -98,7 +100,7 @@ namespace DangNhap
         private void btn_TrangChu_MouseEnter(object sender, EventArgs e)
         {
             btn_TrangChu.BackColor = System.Drawing.Color.DarkGray;
-            
+
         }
 
         private void btn_TrangChu_MouseLeave(object sender, EventArgs e)
@@ -129,14 +131,14 @@ namespace DangNhap
             panel6.Controls.Add(panel7);
             panel6.Controls.Add(panel8);
             panel3.Controls.Add(panel6);
-               
+
             panel7.Visible = true;
             panel3.Visible = true;
         }
-     
+
         public static string TimMaGV()
         {
-           
+
             FormDN dangNhap = new FormDN();
 
             DataTable dataTable = dangNhap.Bang();
@@ -174,16 +176,19 @@ namespace DangNhap
 
         private void btn_XemLichDay_Click(object sender, EventArgs e)
         {
-               AnLichHoc();
-               if (!panel3.Controls.Contains(LichDay.Instance))
-               {
-                    panel3.Controls.Add(LichDay.Instance);
-                    LichDay.Instance.Dock = DockStyle.Fill;
-                    LichDay.Instance.BringToFront();
-               }
-               else
-                    LichDay.Instance.BringToFront();
+            HienLichDay();
+            /*if (!panel3.Controls.Contains(LichDay.Instance))
+            {
+                 panel3.Controls.Add(LichDay.Instance);
+                 LichDay.Instance.Dock = DockStyle.Fill;
+                 LichDay.Instance.BringToFront();
+            }
+            else
+                 LichDay.Instance.BringToFront();
+            */
         }
+
+
 
         private void btn_DoiMK_Click(object sender, EventArgs e)
         {
@@ -204,7 +209,7 @@ namespace DangNhap
         int vt = -1;
         private void dataGridViewHienThiLuong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
             //Tìm tên, giới tính, địa chỉ của GV
             FormDN dangNhap = new FormDN();
             DataTable dataTable = dangNhap.Bang();
@@ -242,7 +247,7 @@ namespace DangNhap
             }
         }
 
-        
+
 
         private void HienThiLuong()
         {
@@ -274,7 +279,7 @@ namespace DangNhap
 
         }
 
-        
+
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -283,35 +288,35 @@ namespace DangNhap
 
         private void comboBoxChonThang_SelectedIndexChanged(object sender, EventArgs e)
         {
-               if(combonămChonNam.SelectedItem != null)
-               {
-                    HienThiLuong();
-               }
+            if (combonămChonNam.SelectedItem != null)
+            {
+                HienThiLuong();
+            }
         }
 
         private void combonămChonNam_SelectedIndexChanged(object sender, EventArgs e)
         {
-               if(comboBoxChonThang.SelectedItem != null)
-               {
-                    HienThiLuong();
-               }
+            if (comboBoxChonThang.SelectedItem != null)
+            {
+                HienThiLuong();
+            }
         }
 
         private void GiaoVien_Load(object sender, EventArgs e)
         {
 
-           label10.Text = "Xin chào " + TimTenGV() + "!";
-           dataGridViewHienThiLuong.BorderStyle = BorderStyle.None;
-           dataGridViewHienThiLuong.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-           dataGridViewHienThiLuong.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-           dataGridViewHienThiLuong.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
-           dataGridViewHienThiLuong.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-           dataGridViewHienThiLuong.BackgroundColor = Color.White;
+            label10.Text = "Xin chào " + TimTenGV() + "!";
+            dataGridViewHienThiLuong.BorderStyle = BorderStyle.None;
+            dataGridViewHienThiLuong.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridViewHienThiLuong.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewHienThiLuong.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dataGridViewHienThiLuong.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridViewHienThiLuong.BackgroundColor = Color.White;
 
-           dataGridViewHienThiLuong.EnableHeadersVisualStyles = false;
-           dataGridViewHienThiLuong.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-           dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-           dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewHienThiLuong.EnableHeadersVisualStyles = false;
+            dataGridViewHienThiLuong.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -321,6 +326,86 @@ namespace DangNhap
             dn.ShowDialog();
         }
 
-        
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_LichHoc_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonXem_theoLop_MouseLeave(object sender, EventArgs e)
+        {
+            buttonXem_theoLop.BackColor = System.Drawing.Color.Silver;
+        }
+
+        private void buttonXem_theoLop_MouseEnter(object sender, EventArgs e)
+        {
+            buttonXem_theoLop.BackColor = System.Drawing.Color.DarkGray;
+        }
+
+        private void buttonXem_TheoNgay_MouseLeave(object sender, EventArgs e)
+        {
+            buttonXem_TheoNgay.BackColor = System.Drawing.Color.Silver;
+        }
+
+        private void buttonXem_TheoNgay_MouseEnter(object sender, EventArgs e)
+        {
+            buttonXem_TheoNgay.BackColor = System.Drawing.Color.DarkGray;
+        }
+
+        private void buttonXem_theotg_MouseLeave(object sender, EventArgs e)
+        {
+            buttonXem_theotg.BackColor = System.Drawing.Color.Silver;
+        }
+
+        private void buttonXem_theotg_MouseEnter(object sender, EventArgs e)
+        {
+            buttonXem_theotg.BackColor = System.Drawing.Color.DarkGray;
+        }
+
+        private void btn_XemLichDay_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void buttonXem_theoLop_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(LichDay.Instance))
+            {
+                panel3.Controls.Add(LichDay.Instance);
+                LichDay.Instance.Dock = DockStyle.Fill;
+                LichDay.Instance.BringToFront();
+            }
+            else
+                LichDay.Instance.BringToFront();
+        }
+
+        private void buttonXem_TheoNgay_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(TimKiem_LichDay_Ngay.Instance))
+            {
+                panel3.Controls.Add(TimKiem_LichDay_Ngay.Instance);
+                TimKiem_LichDay_Ngay.Instance.Dock = DockStyle.Fill;
+                TimKiem_LichDay_Ngay.Instance.BringToFront();
+            }
+            else
+                TimKiem_LichDay_Ngay.Instance.BringToFront();
+        }
+
+        private void buttonXem_theotg_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(TimKiem_LichDay.Instance))
+            {
+                panel3.Controls.Add(TimKiem_LichDay.Instance);
+                TimKiem_LichDay.Instance.Dock = DockStyle.Fill;
+                TimKiem_LichDay.Instance.BringToFront();
+            }
+            else
+                TimKiem_LichDay.Instance.BringToFront();
+        }
     }
+
 }

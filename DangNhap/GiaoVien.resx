@@ -132,22 +132,6 @@
         J1GfZsk3kgsYxhSmuuYYZ1Anog/H+QbHdNk01KXeGgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btn_DoiMK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIvSURBVFhH7ZYx
-        aFRBFEWXWJoiIZV9sLG3CaYPIjYBU1nZRjCtKAgBIZ1goUWwUVBsBItUFsHCIFiKglhJQNuEWKnrOe77
-        Mvx5uxodxcILJzvcf9+bl/+XnT8YDoeHAi3CZXgEu4FrvcWsZhKpmYHm4AF8gddwFy4Frl+B18zMZT0y
-        UrMPWoL38AYWwpuGU8F0eAtgxuxS2WMcqVmC5uEANuEonITn8BkMiGs9r5kxa8181rMkNTvQFDyFZ3AE
-        rsAneAyn4VjgWs9rZsxaY+1U1rsjNTvQKnyE43AWfMYXsqx4LTJmrbF2Nct2pGYH2oabMAM+11tZrsRM
-        ZK2xdjvLdaSmIG//PpyHM+BznsmyJWYia4219hj7GFJT0Alw4edVeJnlMsxGzfceWU5SU9ByFPuFugcP
-        s1yG2aixVmM5y0lqClqxONb3pbw+iTKP/LPSz3Skplhkcaz/3gBoJ4r+BDvVfpUxCt4A70BL7MkWvf0q
-        YzTA2Fv2q9jT3pVfGf8H+MkB0CysBbNZpgS1GwC5+R68DVxPHAI1HcD/2o39pRPXa1m2AzUdYAM+gK9p
-        4nojy3agpgN4yHjbbweuxx44gpp/CX3tehJsZpkS1HyALbgTbGWZEtR8AM/8a8EP3xVQ8wF87i+CvSxT
-        gpoPcB2+Hbuus0wJajvAYbGnvSu/Mv6BAfxRudj3fxd72rvyK2MwWId3UXCuEfay53q1X2WMDhqH8E5o
-        tMBe9uwdWMPBV0+vwOgrEA8QAAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="dataGridViewHienThiLuong.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -167,6 +151,9 @@
     <value>True</value>
   </metadata>
   <metadata name="TongTien.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
