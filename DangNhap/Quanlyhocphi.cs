@@ -22,6 +22,8 @@ namespace DangNhap
         {
             cn = new Connection();
             InitializeComponent();
+            this.cbbNam.SelectedIndex = 1;
+            this.cbbThang.SelectedIndex = 2;
         }
 
         private void loadDSGV()
@@ -160,6 +162,29 @@ namespace DangNhap
         private void cbbNam_SelectedValueChanged(object sender, EventArgs e)
         {
             loadDSGV();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                txt_TenHS.Visible = true;
+            } else
+            {
+                txt_TenHS.Visible = false;
+                SqlConnection con = new SqlConnection();
+                con = cn.GetConnection();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "sp_HoaDonChuaNop";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = con;
+                con.Open();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                dgvDSHS.DataSource = dt;
+                con.Close();
+            }
         }
     }
 }
