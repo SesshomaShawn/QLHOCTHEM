@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cbbTenlop = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.LH_Toan = new System.Windows.Forms.TextBox();
             this.GV_Toan = new System.Windows.Forms.TextBox();
@@ -56,8 +56,8 @@
             this.SoTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtViewToan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,15 +67,36 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-
-            this.panel1.Size = new System.Drawing.Size(1363, 10);
+            this.panel1.Size = new System.Drawing.Size(1360, 237);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.LH_Toan);
+            this.panel2.Controls.Add(this.GV_Toan);
+            this.panel2.Controls.Add(this.Tiet_Toan);
+            this.panel2.Controls.Add(this.Ngay_Toan);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.Kip_Toan);
+            this.panel2.Controls.Add(this.ML_Toan);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1360, 237);
+            this.panel2.TabIndex = 16;
             // 
             // panel3
             // 
@@ -83,7 +104,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.cbbTenlop);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(648, 82);
+            this.panel3.Location = new System.Drawing.Point(718, 4);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 152);
@@ -106,39 +127,15 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-
-            this.label1.BackColor = System.Drawing.Color.Navy;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(60, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên lớp";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.LH_Toan);
-            this.panel2.Controls.Add(this.GV_Toan);
-            this.panel2.Controls.Add(this.Tiet_Toan);
-            this.panel2.Controls.Add(this.Ngay_Toan);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.Kip_Toan);
-            this.panel2.Controls.Add(this.ML_Toan);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(217, 82);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1059, 152);
-            this.panel2.TabIndex = 16;
             // 
             // label7
             // 
@@ -148,9 +145,8 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(46, 35);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(66, 73);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 21);
@@ -163,7 +159,7 @@
             this.LH_Toan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.LH_Toan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LH_Toan.Location = new System.Drawing.Point(781, 78);
+            this.LH_Toan.Location = new System.Drawing.Point(801, 116);
             this.LH_Toan.Margin = new System.Windows.Forms.Padding(2);
             this.LH_Toan.Name = "LH_Toan";
             this.LH_Toan.Size = new System.Drawing.Size(138, 29);
@@ -173,10 +169,10 @@
             // GV_Toan
             // 
             this.GV_Toan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GV_Toan.Location = new System.Drawing.Point(158, 33);
+            this.GV_Toan.Location = new System.Drawing.Point(178, 71);
             this.GV_Toan.Margin = new System.Windows.Forms.Padding(2);
             this.GV_Toan.Name = "GV_Toan";
-            this.GV_Toan.Size = new System.Drawing.Size(138, 29);
+            this.GV_Toan.Size = new System.Drawing.Size(176, 29);
             this.GV_Toan.TabIndex = 15;
             this.GV_Toan.TextChanged += new System.EventHandler(this.GV_Toan_TextChanged);
             // 
@@ -185,7 +181,7 @@
             this.Tiet_Toan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Tiet_Toan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tiet_Toan.Location = new System.Drawing.Point(781, 30);
+            this.Tiet_Toan.Location = new System.Drawing.Point(801, 68);
             this.Tiet_Toan.Margin = new System.Windows.Forms.Padding(2);
             this.Tiet_Toan.Name = "Tiet_Toan";
             this.Tiet_Toan.Size = new System.Drawing.Size(138, 29);
@@ -197,7 +193,7 @@
             this.Ngay_Toan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Ngay_Toan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ngay_Toan.Location = new System.Drawing.Point(460, 33);
+            this.Ngay_Toan.Location = new System.Drawing.Point(480, 71);
             this.Ngay_Toan.Margin = new System.Windows.Forms.Padding(2);
             this.Ngay_Toan.Name = "Ngay_Toan";
             this.Ngay_Toan.Size = new System.Drawing.Size(138, 29);
@@ -209,9 +205,8 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(670, 81);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(690, 119);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 21);
@@ -227,9 +222,8 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(46, 82);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(66, 120);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(99, 21);
@@ -242,9 +236,8 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(670, 33);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(690, 71);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 21);
@@ -255,7 +248,7 @@
             // Kip_Toan
             // 
             this.Kip_Toan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Kip_Toan.Location = new System.Drawing.Point(460, 83);
+            this.Kip_Toan.Location = new System.Drawing.Point(480, 121);
             this.Kip_Toan.Margin = new System.Windows.Forms.Padding(2);
             this.Kip_Toan.Name = "Kip_Toan";
             this.Kip_Toan.Size = new System.Drawing.Size(138, 29);
@@ -265,7 +258,7 @@
             // ML_Toan
             // 
             this.ML_Toan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ML_Toan.Location = new System.Drawing.Point(158, 80);
+            this.ML_Toan.Location = new System.Drawing.Point(178, 118);
             this.ML_Toan.Margin = new System.Windows.Forms.Padding(2);
             this.ML_Toan.Name = "ML_Toan";
             this.ML_Toan.Size = new System.Drawing.Size(138, 29);
@@ -280,9 +273,8 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(362, 35);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(382, 73);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 21);
@@ -295,9 +287,8 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(362, 85);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(382, 123);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 21);
@@ -312,7 +303,6 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(705, 25);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -323,17 +313,15 @@
             // 
             // DtViewToan
             // 
-            this.DtViewToan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.DtViewToan.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtViewToan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtViewToan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DtViewToan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtViewToan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLichHoc,
@@ -342,15 +330,14 @@
             this.KipHoc,
             this.SoTiet,
             this.HoTenGV});
-
-            this.DtViewToan.Location = new System.Drawing.Point(8, 15);
+            this.DtViewToan.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DtViewToan.Location = new System.Drawing.Point(0, 151);
             this.DtViewToan.Margin = new System.Windows.Forms.Padding(2);
             this.DtViewToan.Name = "DtViewToan";
             this.DtViewToan.RowHeadersVisible = false;
             this.DtViewToan.RowHeadersWidth = 51;
             this.DtViewToan.RowTemplate.Height = 24;
-
-            this.DtViewToan.Size = new System.Drawing.Size(1343, 624);
+            this.DtViewToan.Size = new System.Drawing.Size(1360, 500);
             this.DtViewToan.TabIndex = 2;
             this.DtViewToan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtViewToan_CellClick);
             this.DtViewToan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtViewToan_CellContentClick);
@@ -374,8 +361,8 @@
             // NgayHoc
             // 
             this.NgayHoc.DataPropertyName = "NgayHoc";
-            dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-            this.NgayHoc.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Format = "dd/MM/yyyy";
+            this.NgayHoc.DefaultCellStyle = dataGridViewCellStyle4;
             this.NgayHoc.HeaderText = "Ngày Học";
             this.NgayHoc.MinimumWidth = 6;
             this.NgayHoc.Name = "NgayHoc";
@@ -410,20 +397,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.DtViewToan);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "LichDay";
-            this.Size = new System.Drawing.Size(1363, 651);
+            this.Size = new System.Drawing.Size(1360, 651);
             this.Load += new System.EventHandler(this.LichDay_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtViewToan)).EndInit();
             this.ResumeLayout(false);
 
