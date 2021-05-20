@@ -201,6 +201,7 @@ namespace DangNhap
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView_Lich.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_Lich.RowHeadersWidth = 51;
+            this.dataGridView_Lich.RowTemplate.Height = 24;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Lich.Size = new System.Drawing.Size(1082, 436);
