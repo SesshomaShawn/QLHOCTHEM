@@ -112,7 +112,7 @@ namespace DangNhap
         private void dataGridView_Lich_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int vt = e.RowIndex;
-            if (vt >= 0)
+            try
             {
                 DataGridViewRow row = this.dataGridView_Lich.Rows[e.RowIndex];
                 textBoxSoTiet.Text = row.Cells["SoTiet"].Value.ToString();
@@ -121,6 +121,11 @@ namespace DangNhap
                 textBoxNgayHoc.Text = date.ToString("dd/MM/yyyy");
                 textBoxKip.Text = row.Cells["KipHoc"].Value.ToString();
             }
+            catch
+            {
+                MessageBox.Show("Chưa có dữ liệu!");
+            }
+           
         }
     }
 
