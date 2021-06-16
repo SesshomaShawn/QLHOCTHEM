@@ -29,10 +29,10 @@ namespace DangNhap
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelChitiet = new System.Windows.Forms.Panel();
             this.textBoxSoTiet = new System.Windows.Forms.TextBox();
             this.textBoxKip = new System.Windows.Forms.TextBox();
@@ -63,8 +63,7 @@ namespace DangNhap
             // 
             // panelChitiet
             // 
-            this.panelChitiet.BackColor = System.Drawing.Color.Silver;
-            this.panelChitiet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelChitiet.BackColor = System.Drawing.Color.LightBlue;
             this.panelChitiet.Controls.Add(this.textBoxSoTiet);
             this.panelChitiet.Controls.Add(this.textBoxKip);
             this.panelChitiet.Controls.Add(this.textBoxMaLop);
@@ -164,14 +163,14 @@ namespace DangNhap
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Lich.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Lich.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Lich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_Lich.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Lich.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLichHoc,
@@ -181,32 +180,33 @@ namespace DangNhap
             this.SoTiet,
             this.HoTenGV,
             this.MALMH});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView_Lich.Location = new System.Drawing.Point(25, 265);
             this.dataGridView_Lich.Name = "dataGridView_Lich";
             this.dataGridView_Lich.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Lich.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lich.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView_Lich.RowHeadersWidth = 51;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView_Lich.RowTemplate.Height = 24;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Lich.Size = new System.Drawing.Size(1082, 436);
             this.dataGridView_Lich.TabIndex = 0;
             this.dataGridView_Lich.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Lich_CellClick);
+            this.dataGridView_Lich.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Lich_CellContentClick);
             // 
             // MaLichHoc
             // 
@@ -267,7 +267,7 @@ namespace DangNhap
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.panelSearch);
             this.panel3.Controls.Add(this.panelChitiet);
             this.panel3.Location = new System.Drawing.Point(25, 0);
@@ -277,7 +277,7 @@ namespace DangNhap
             // 
             // panelSearch
             // 
-            this.panelSearch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelSearch.BackColor = System.Drawing.Color.LightBlue;
             this.panelSearch.Controls.Add(this.dateTimePicker1);
             this.panelSearch.Controls.Add(this.label6);
             this.panelSearch.Controls.Add(this.label5);
@@ -324,7 +324,7 @@ namespace DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView_Lich);
             this.Location = new System.Drawing.Point(226, -1);

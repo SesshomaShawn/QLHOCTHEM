@@ -507,6 +507,8 @@
     <None Include="Resources\calendar.png" />
     <None Include="Resources\backup-file.png" />
     <None Include="Resources\add-user.png" />
+    <None Include="Resources\blind.png" />
+    <None Include="Resources\blind1.png" />
     <Content Include="Resources\dangnhap.jpg" />
     <Content Include="Resources\e570c56c1a2e5e64ae257f34215c2922.jpg" />
     <None Include="Resources\key-knowledge-background-2769250.jpg" />
@@ -517,6 +519,8 @@
     <None Include="Resources\remove-user.png" />
     <None Include="Resources\edit.png" />
     <None Include="Resources\lock.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\eye1.png" />
     <Content Include="Resources\school.png" />
     <None Include="Resources\school1.png" />
     <None Include="Resources\employee.png" />

@@ -93,5 +93,10 @@ namespace DangNhap
         {
 
         }
+
+        private void Txt_Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

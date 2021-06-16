@@ -81,5 +81,10 @@ namespace DangNhap
                 textBoxKip.Text = row.Cells["KipHoc"].Value.ToString();
             }
         }
+
+        private void dataGridView_Lich_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

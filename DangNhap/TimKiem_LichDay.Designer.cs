@@ -29,10 +29,10 @@ namespace DangNhap
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelChitiet = new System.Windows.Forms.Panel();
             this.textBoxSoTiet = new System.Windows.Forms.TextBox();
             this.textBoxKip = new System.Windows.Forms.TextBox();
@@ -43,14 +43,6 @@ namespace DangNhap
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView_Lich = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panelSearch = new System.Windows.Forms.Panel();
-            this.dtpDay2 = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dtpDay1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.MaLichHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +50,14 @@ namespace DangNhap
             this.SoTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MALMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelSearch = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dtpDay2 = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtpDay1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelChitiet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Lich)).BeginInit();
             this.panel3.SuspendLayout();
@@ -66,8 +66,7 @@ namespace DangNhap
             // 
             // panelChitiet
             // 
-            this.panelChitiet.BackColor = System.Drawing.Color.Silver;
-            this.panelChitiet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelChitiet.BackColor = System.Drawing.Color.LightBlue;
             this.panelChitiet.Controls.Add(this.textBoxSoTiet);
             this.panelChitiet.Controls.Add(this.textBoxKip);
             this.panelChitiet.Controls.Add(this.textBoxMaLop);
@@ -166,14 +165,14 @@ namespace DangNhap
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Lich.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Lich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_Lich.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Lich.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLichHoc,
@@ -183,119 +182,32 @@ namespace DangNhap
             this.SoTiet,
             this.HoTenGV,
             this.MALMH});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView_Lich.Location = new System.Drawing.Point(25, 265);
             this.dataGridView_Lich.Name = "dataGridView_Lich";
             this.dataGridView_Lich.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Lich.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lich.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView_Lich.RowHeadersWidth = 51;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView_Lich.RowTemplate.Height = 24;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Lich.Size = new System.Drawing.Size(1082, 436);
             this.dataGridView_Lich.TabIndex = 0;
             this.dataGridView_Lich.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Lich_CellClick);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.panelSearch);
-            this.panel3.Controls.Add(this.panelChitiet);
-            this.panel3.Location = new System.Drawing.Point(25, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1081, 249);
-            this.panel3.TabIndex = 2;
-            // 
-            // panelSearch
-            // 
-            this.panelSearch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelSearch.Controls.Add(this.button1);
-            this.panelSearch.Controls.Add(this.dtpDay2);
-            this.panelSearch.Controls.Add(this.label7);
-            this.panelSearch.Controls.Add(this.dtpDay1);
-            this.panelSearch.Controls.Add(this.label6);
-            this.panelSearch.Controls.Add(this.label5);
-            this.panelSearch.Location = new System.Drawing.Point(713, 16);
-            this.panelSearch.Name = "panelSearch";
-            this.panelSearch.Size = new System.Drawing.Size(334, 218);
-            this.panelSearch.TabIndex = 1;
-            // 
-            // dtpDay2
-            // 
-            this.dtpDay2.CustomFormat = "dd/MM/yyyy";
-            this.dtpDay2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDay2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDay2.Location = new System.Drawing.Point(71, 127);
-            this.dtpDay2.Name = "dtpDay2";
-            this.dtpDay2.Size = new System.Drawing.Size(200, 29);
-            this.dtpDay2.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(3, 133);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 22);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Đến: ";
-            // 
-            // dtpDay1
-            // 
-            this.dtpDay1.CustomFormat = "dd/MM/yyyy";
-            this.dtpDay1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDay1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDay1.Location = new System.Drawing.Point(71, 75);
-            this.dtpDay1.Name = "dtpDay1";
-            this.dtpDay1.Size = new System.Drawing.Size(200, 29);
-            this.dtpDay1.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 81);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 23);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Từ:";
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(99, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 34);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Tìm kiếm";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(124, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Tìm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MaLichHoc
             // 
@@ -355,11 +267,100 @@ namespace DangNhap
             this.MALMH.ReadOnly = true;
             this.MALMH.Visible = false;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.panelSearch);
+            this.panel3.Controls.Add(this.panelChitiet);
+            this.panel3.Location = new System.Drawing.Point(25, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1081, 249);
+            this.panel3.TabIndex = 2;
+            // 
+            // panelSearch
+            // 
+            this.panelSearch.BackColor = System.Drawing.Color.LightBlue;
+            this.panelSearch.Controls.Add(this.button1);
+            this.panelSearch.Controls.Add(this.dtpDay2);
+            this.panelSearch.Controls.Add(this.label7);
+            this.panelSearch.Controls.Add(this.dtpDay1);
+            this.panelSearch.Controls.Add(this.label6);
+            this.panelSearch.Controls.Add(this.label5);
+            this.panelSearch.Location = new System.Drawing.Point(713, 16);
+            this.panelSearch.Name = "panelSearch";
+            this.panelSearch.Size = new System.Drawing.Size(334, 218);
+            this.panelSearch.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(124, 172);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 29);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Tìm";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dtpDay2
+            // 
+            this.dtpDay2.CustomFormat = "dd/MM/yyyy";
+            this.dtpDay2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDay2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDay2.Location = new System.Drawing.Point(71, 127);
+            this.dtpDay2.Name = "dtpDay2";
+            this.dtpDay2.Size = new System.Drawing.Size(200, 29);
+            this.dtpDay2.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(3, 133);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 22);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Đến: ";
+            // 
+            // dtpDay1
+            // 
+            this.dtpDay1.CustomFormat = "dd/MM/yyyy";
+            this.dtpDay1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDay1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDay1.Location = new System.Drawing.Point(71, 75);
+            this.dtpDay1.Name = "dtpDay1";
+            this.dtpDay1.Size = new System.Drawing.Size(200, 29);
+            this.dtpDay1.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 81);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 23);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Từ:";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.SteelBlue;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(99, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(133, 34);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Tìm kiếm";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // TimKiem_LichDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView_Lich);
             this.Location = new System.Drawing.Point(226, -1);

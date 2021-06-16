@@ -33,7 +33,7 @@ namespace DangNhap
                string Quyen = null;
                int cout = myTable.Rows.Count;
                string t1 = TextUser.Text;
-               string t2 = TextPass.Text;
+               string t2 = textPass_see.Text;
                if (TextUser.Text == "")
                {
                     MessageBox.Show("Bạn chưa nhập tài khoản");
@@ -42,7 +42,7 @@ namespace DangNhap
                else if (t2 == "")
                {
                     MessageBox.Show("Bạn chưa nhập mật khẩu");
-                    TextPass.Focus();
+                    textPass_see.Focus();
                }
                else
                {
@@ -71,7 +71,7 @@ namespace DangNhap
                     
                     HocSinh hs = new HocSinh();
                     hs.Tendangnhap = this.TextUser.Text;
-                    hs.password = this.TextPass.Text;
+                    hs.password = this.textPass_see.Text;
                     hs.ShowDialog();
                     this.Close();
 
@@ -81,7 +81,7 @@ namespace DangNhap
                {
                     GiaoVien gv = new GiaoVien();
                     GiaoVien.TenDN = TextUser.Text.Trim();
-                    gv.Pass = TextPass.Text.Trim();
+                    gv.Pass = textPass_see.Text.Trim();
                     gv.ShowDialog(); 
 
                     this.Close();
@@ -146,83 +146,34 @@ namespace DangNhap
                return dt;
           }
 
-        private void TextPass_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-                DangNhap();
-            if (e.KeyCode == Keys.Space)
-                chuyenTrangThai();
-        }
-
         private void label2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            chuyenTrangThai();
-        }
-
-        private void chuyenTrangThai()
-        {
-            TextPass.UseSystemPasswordChar = !TextPass.UseSystemPasswordChar;
-            if (TextPass.UseSystemPasswordChar == false)
-            {
-                this.button2.BackgroundImage = global::DangNhap.Properties.Resources.mắt_new_removebg_preview33;
-            }
-            else
-            {
-                this.button2.BackgroundImage = global::DangNhap.Properties.Resources.măt_new_mã_33;
-            }
-        }
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
-          /*  this.TextUser.Text = "Tên đăng nhập";
-            this.TextUser.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.TextPass.Text = "Mật khẩu";
-            this.TextPass.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.TextPass.UseSystemPasswordChar = false;*/
-
+          
         }
 
-        private void TextUser_Click(object sender, EventArgs e)
+        private void button2_MouseDown(object sender, MouseEventArgs e)
         {
-           /* if (TextUser.Text.Trim() == "Tên đăng nhập")
-            {
-                this.TextUser.Clear();
-                this.TextPass.Clear();
-                this.TextUser.ForeColor = System.Drawing.SystemColors.WindowText;
-                this.TextPass.ForeColor = System.Drawing.SystemColors.WindowText;
-                this.TextPass.UseSystemPasswordChar = true;
-            }
-*/
-
+            textPass_see.Hide();
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button2_MouseUp(object sender, MouseEventArgs e)
         {
-
+            textPass_see.Show();
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
+            TextPass.Text = textPass_see.Text;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            TextPass.UseSystemPasswordChar = !TextPass.UseSystemPasswordChar;
-            if (TextPass.UseSystemPasswordChar == false)
-            {
-                this.button2.BackgroundImage = global::DangNhap.Properties.Resources.mắt_new_removebg_preview33;
-            }
-            else
-            {
-                this.button2.BackgroundImage = global::DangNhap.Properties.Resources.măt_new_mã_33;
-            }
-        }
+      
     }
 }

@@ -57,7 +57,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panelChitiet);
             this.panel1.Location = new System.Drawing.Point(25, 0);
@@ -67,7 +67,7 @@
             // 
             // panel3
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.BackColor = System.Drawing.Color.LightBlue;
             this.panel3.Controls.Add(this.cbbTenLop);
             this.panel3.Controls.Add(this.label5);
             this.panel3.ForeColor = System.Drawing.Color.Black;
@@ -87,7 +87,7 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.BackColor = System.Drawing.Color.SteelBlue;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(78, 30);
@@ -99,8 +99,7 @@
             // 
             // panelChitiet
             // 
-            this.panelChitiet.BackColor = System.Drawing.Color.Silver;
-            this.panelChitiet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelChitiet.BackColor = System.Drawing.Color.LightBlue;
             this.panelChitiet.Controls.Add(this.textBoxSoTiet);
             this.panelChitiet.Controls.Add(this.textBoxKip);
             this.panelChitiet.Controls.Add(this.textBoxNgayHoc);
@@ -118,7 +117,7 @@
             // textBoxSoTiet
             // 
             this.textBoxSoTiet.Enabled = false;
-            this.textBoxSoTiet.Location = new System.Drawing.Point(577, 126);
+            this.textBoxSoTiet.Location = new System.Drawing.Point(442, 118);
             this.textBoxSoTiet.Name = "textBoxSoTiet";
             this.textBoxSoTiet.ReadOnly = true;
             this.textBoxSoTiet.Size = new System.Drawing.Size(209, 29);
@@ -207,7 +206,6 @@
             this.KipHoc,
             this.SoTiet,
             this.HoTenGV});
-            this.dataGridView_Lich.GridColor = System.Drawing.Color.White;
             this.dataGridView_Lich.Location = new System.Drawing.Point(25, 265);
             this.dataGridView_Lich.Name = "dataGridView_Lich";
             this.dataGridView_Lich.ReadOnly = true;
@@ -272,7 +270,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.dataGridView_Lich);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
