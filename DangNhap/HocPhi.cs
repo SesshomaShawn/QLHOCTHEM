@@ -89,6 +89,7 @@ namespace DangNhap
 
         private void HocPhi_Load(object sender, EventArgs e)
         {
+            /*
           dataviewHP.BorderStyle = BorderStyle.None;
           dataviewHP.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
           //dataviewHP.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -97,9 +98,21 @@ namespace DangNhap
           //dataviewHP.BackgroundColor = Color.White;
 
           dataviewHP.EnableHeadersVisualStyles = false;
-          //dataviewHP.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-          //dataviewHP.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-          //dataviewHP.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            //dataviewHP.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            //dataviewHP.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            //dataviewHP.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            */
+            dataviewHP.BorderStyle = BorderStyle.FixedSingle;
+            dataviewHP.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataviewHP.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataviewHP.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dataviewHP.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataviewHP.BackgroundColor = Color.White;
+
+            dataviewHP.EnableHeadersVisualStyles = false;
+            dataviewHP.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataviewHP.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dataviewHP.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void Btn_BuoiNghi_Click(object sender, EventArgs e)

@@ -45,29 +45,32 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.dtGBuoiNghi);
-            this.panel1.Location = new System.Drawing.Point(48, 103);
+            this.panel1.Location = new System.Drawing.Point(36, 84);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(695, 279);
+            this.panel1.Size = new System.Drawing.Size(522, 227);
             this.panel1.TabIndex = 0;
             // 
             // dtGBuoiNghi
             // 
+            this.dtGBuoiNghi.BackgroundColor = System.Drawing.Color.White;
             this.dtGBuoiNghi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGBuoiNghi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.sotietnghi,
             this.Column4});
-            this.dtGBuoiNghi.Location = new System.Drawing.Point(24, 26);
+            this.dtGBuoiNghi.Location = new System.Drawing.Point(18, 21);
+            this.dtGBuoiNghi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtGBuoiNghi.Name = "dtGBuoiNghi";
             this.dtGBuoiNghi.RowHeadersWidth = 51;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtGBuoiNghi.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtGBuoiNghi.RowTemplate.Height = 24;
-            this.dtGBuoiNghi.Size = new System.Drawing.Size(644, 229);
+            this.dtGBuoiNghi.Size = new System.Drawing.Size(483, 186);
             this.dtGBuoiNghi.TabIndex = 0;
             // 
             // Column1
@@ -108,9 +111,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(297, 34);
+            this.label1.Location = new System.Drawing.Point(223, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 32);
+            this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Chi tiết nghỉ học";
             // 
@@ -119,31 +123,34 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(238, 407);
+            this.label2.Location = new System.Drawing.Point(178, 331);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 23);
+            this.label2.Size = new System.Drawing.Size(120, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tổng số tiết nghỉ";
             // 
             // txt_Tongtietnghi
             // 
             this.txt_Tongtietnghi.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tongtietnghi.Location = new System.Drawing.Point(394, 402);
+            this.txt_Tongtietnghi.Location = new System.Drawing.Point(296, 327);
+            this.txt_Tongtietnghi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_Tongtietnghi.Name = "txt_Tongtietnghi";
-            this.txt_Tongtietnghi.Size = new System.Drawing.Size(198, 28);
+            this.txt_Tongtietnghi.Size = new System.Drawing.Size(150, 24);
             this.txt_Tongtietnghi.TabIndex = 3;
             // 
             // NghiHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(778, 467);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(584, 379);
             this.Controls.Add(this.txt_Tongtietnghi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NghiHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NghiHoc";
