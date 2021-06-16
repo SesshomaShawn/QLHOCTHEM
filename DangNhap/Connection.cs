@@ -12,7 +12,7 @@ namespace DangNhap
         private string connect;
         public Connection()
         {
-            connect = @"Data Source=Shawn;Initial Catalog=QLHOCTHEM;Integrated Security=True";
+            connect = @"Data Source=DESKTOP-51QTD7V\SQL;Initial Catalog=QLHOCTHEM;Integrated Security=True";
         }
         public SqlConnection GetConnection()
         {

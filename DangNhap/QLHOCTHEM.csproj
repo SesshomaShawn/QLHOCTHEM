@@ -173,6 +173,18 @@
     <Compile Include="Lichhoc\Van.designer.cs">
       <DependentUpon>Van.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lop_ChuaDangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lop_ChuaDangKy.Designer.cs">
+      <DependentUpon>Lop_ChuaDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lop_DaDangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lop_DaDangKy.Designer.cs">
+      <DependentUpon>Lop_DaDangKy.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +257,18 @@
     </Compile>
     <Compile Include="Thongke.designer.cs">
       <DependentUpon>Thongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemLichHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimKiemLichHoc.Designer.cs">
+      <DependentUpon>TimKiemLichHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemLichHoc_Ngay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimKiemLichHoc_Ngay.Designer.cs">
+      <DependentUpon>TimKiemLichHoc_Ngay.cs</DependentUpon>
     </Compile>
     <Compile Include="TimKiem_LichDay.cs">
       <SubType>UserControl</SubType>
@@ -325,6 +349,12 @@
     <EmbeddedResource Include="Lichhoc\Van.resx">
       <DependentUpon>Van.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lop_ChuaDangKy.resx">
+      <DependentUpon>Lop_ChuaDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lop_DaDangKy.resx">
+      <DependentUpon>Lop_DaDangKy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NghiHoc.resx">
       <DependentUpon>NghiHoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,6 +397,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Thongke.resx">
       <DependentUpon>Thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemLichHoc.resx">
+      <DependentUpon>TimKiemLichHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemLichHoc_Ngay.resx">
+      <DependentUpon>TimKiemLichHoc_Ngay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimKiem_LichDay.resx">
       <DependentUpon>TimKiem_LichDay.cs</DependentUpon>

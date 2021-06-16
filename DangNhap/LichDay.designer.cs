@@ -118,7 +118,7 @@
             // textBoxSoTiet
             // 
             this.textBoxSoTiet.Enabled = false;
-            this.textBoxSoTiet.Location = new System.Drawing.Point(442, 118);
+            this.textBoxSoTiet.Location = new System.Drawing.Point(577, 126);
             this.textBoxSoTiet.Name = "textBoxSoTiet";
             this.textBoxSoTiet.ReadOnly = true;
             this.textBoxSoTiet.Size = new System.Drawing.Size(209, 29);
