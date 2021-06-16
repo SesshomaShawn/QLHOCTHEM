@@ -70,7 +70,7 @@ namespace DangNhap
 
                     
                     HocSinh hs = new HocSinh();
-                    HocSinh.Tendangnhap = this.TextUser.Text;
+                    HocSinh.TenDN = this.TextUser.Text.Trim();
                     hs.password = this.TextPass.Text;
                     hs.ShowDialog();
                     this.Close();

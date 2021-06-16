@@ -18,7 +18,7 @@ namespace DangNhap
         public static string Tendangnhap = "";
         public string password = "";
         public static string MaHS { get => maHS; set => maHS = value; }
-        public static string TenDN { get => Tendangnhap; set => Tendangnhap= value; }
+        public static string TenDN { get => Tendangnhap; set => Tendangnhap = value; }
         public static string HoTen { get => hoTen; set => hoTen = value; }
         public HocSinh()
         {
@@ -164,41 +164,41 @@ namespace DangNhap
         private void btn_Toan_Click(object sender, EventArgs e)
         {
             //AnLichHoc();
-            if (!panel3.Controls.Contains(Lichhoc.Instance))
+            if (!panel3.Controls.Contains(Lop_DaDangKy.Instance))
             {
-                panel3.Controls.Add(Lichhoc.Instance);
-                Lichhoc.Instance.Dock = DockStyle.Fill;
-                Lichhoc.Instance.BringToFront();
+                panel3.Controls.Add(Lop_DaDangKy.Instance);
+                Lop_DaDangKy.Instance.Dock = DockStyle.Fill;
+                Lop_DaDangKy.Instance.BringToFront();
             }
             else
-                Lichhoc.Instance.BringToFront();
+                Lop_DaDangKy.Instance.BringToFront();
         }
 
         private void btn_Li_Click(object sender, EventArgs e)
         {
             //AnLichHoc();
-            if (!panel3.Controls.Contains(Li.Instance))
+            if (!panel3.Controls.Contains(Lop_ChuaDangKy.Instance))
             {
-                panel3.Controls.Add(Li.Instance);
-                Li.Instance.Dock = DockStyle.Fill;
-                Li.Instance.BringToFront();
+                panel3.Controls.Add(Lop_ChuaDangKy.Instance);
+                Lop_ChuaDangKy.Instance.Dock = DockStyle.Fill;
+                Lop_ChuaDangKy.Instance.BringToFront();
             }
             else
-                Li.Instance.BringToFront();
+                Lop_ChuaDangKy.Instance.BringToFront();
 
         }
 
         private void btn_Hoa_Click(object sender, EventArgs e)
         {
             //AnLichHoc();
-            if (!panel3.Controls.Contains(Hoa.Instance))
+            if (!panel3.Controls.Contains(TimKiemLichHoc_Ngay.Instance))
             {
-                panel3.Controls.Add(Hoa.Instance);
-                Hoa.Instance.Dock = DockStyle.Fill;
-                Hoa.Instance.BringToFront();
+                panel3.Controls.Add(TimKiemLichHoc_Ngay.Instance);
+                TimKiemLichHoc_Ngay.Instance.Dock = DockStyle.Fill;
+                TimKiemLichHoc_Ngay.Instance.BringToFront();
             }
             else
-                Hoa.Instance.BringToFront();
+                TimKiemLichHoc_Ngay.Instance.BringToFront();
         }
 
         private void tbn_Van_Click(object sender, EventArgs e)
