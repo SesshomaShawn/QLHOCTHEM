@@ -57,7 +57,7 @@ namespace DangNhap
 
         private void LichDay_Load(object sender, EventArgs e)
         {
-            dataGridView_Lich.BorderStyle = BorderStyle.None;
+            dataGridView_Lich.BorderStyle = BorderStyle.FixedSingle;
             dataGridView_Lich.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView_Lich.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView_Lich.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;

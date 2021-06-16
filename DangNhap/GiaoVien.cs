@@ -68,44 +68,44 @@ namespace DangNhap
 
         private void btn_XemLuong_MouseEnter(object sender, EventArgs e)
         {
-            btn_XemLuong.BackColor = System.Drawing.Color.DarkGray;
+            btn_XemLuong.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void btn_XemLuong_MouseLeave(object sender, EventArgs e)
         {
-            btn_XemLuong.BackColor = System.Drawing.Color.Silver;
+            btn_XemLuong.BackColor = System.Drawing.Color.White;
         }
 
         private void btn_XemLichDay_MouseEnter(object sender, EventArgs e)
         {
-            btn_XemLichDay.BackColor = System.Drawing.Color.DarkGray;
+            btn_XemLichDay.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void btn_XemLichDay_MouseLeave(object sender, EventArgs e)
         {
-            btn_XemLichDay.BackColor = System.Drawing.Color.Silver;
+            btn_XemLichDay.BackColor = System.Drawing.Color.White;
         }
 
 
         private void btn_DoiMK_MouseEnter(object sender, EventArgs e)
         {
-            btn_DoiMK.BackColor = System.Drawing.Color.DarkGray;
+            btn_DoiMK.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void btn_DoiMK_MouseLeave(object sender, EventArgs e)
         {
-            btn_DoiMK.BackColor = System.Drawing.Color.Silver;
+            btn_DoiMK.BackColor = System.Drawing.Color.White;
         }
 
         private void btn_TrangChu_MouseEnter(object sender, EventArgs e)
         {
-            btn_TrangChu.BackColor = System.Drawing.Color.DarkGray;
+            btn_TrangChu.BackColor = System.Drawing.Color.LightBlue;
 
         }
 
         private void btn_TrangChu_MouseLeave(object sender, EventArgs e)
         {
-            btn_TrangChu.BackColor = System.Drawing.Color.Silver;
+            btn_TrangChu.BackColor = System.Drawing.Color.White;
         }
 
         private void btn_TrangChu_Click(object sender, EventArgs e)
@@ -306,7 +306,7 @@ namespace DangNhap
         {
 
             label10.Text = "Xin chào " + TimTenGV() + "!";
-            dataGridViewHienThiLuong.BorderStyle = BorderStyle.None;
+            dataGridViewHienThiLuong.BorderStyle = BorderStyle.FixedSingle;
             dataGridViewHienThiLuong.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridViewHienThiLuong.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewHienThiLuong.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
@@ -338,32 +338,32 @@ namespace DangNhap
 
         private void buttonXem_theoLop_MouseLeave(object sender, EventArgs e)
         {
-            buttonXem_theoLop.BackColor = System.Drawing.Color.Silver;
+            buttonXem_theoLop.BackColor = System.Drawing.Color.White;
         }
 
         private void buttonXem_theoLop_MouseEnter(object sender, EventArgs e)
         {
-            buttonXem_theoLop.BackColor = System.Drawing.Color.DarkGray;
+            buttonXem_theoLop.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void buttonXem_TheoNgay_MouseLeave(object sender, EventArgs e)
         {
-            buttonXem_TheoNgay.BackColor = System.Drawing.Color.Silver;
+            buttonXem_TheoNgay.BackColor = System.Drawing.Color.White;
         }
 
         private void buttonXem_TheoNgay_MouseEnter(object sender, EventArgs e)
         {
-            buttonXem_TheoNgay.BackColor = System.Drawing.Color.DarkGray;
+            buttonXem_TheoNgay.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void buttonXem_theotg_MouseLeave(object sender, EventArgs e)
         {
-            buttonXem_theotg.BackColor = System.Drawing.Color.Silver;
+            buttonXem_theotg.BackColor = System.Drawing.Color.White;
         }
 
         private void buttonXem_theotg_MouseEnter(object sender, EventArgs e)
         {
-            buttonXem_theotg.BackColor = System.Drawing.Color.DarkGray;
+            buttonXem_theotg.BackColor = System.Drawing.Color.LightBlue;
         }
 
         private void btn_XemLichDay_MouseClick(object sender, MouseEventArgs e)
@@ -405,6 +405,16 @@ namespace DangNhap
             }
             else
                 TimKiem_LichDay.Instance.BringToFront();
+        }
+
+        private void btn_logout_MouseEnter(object sender, EventArgs e)
+        {
+            btn_logout.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btn_logout_MouseLeave(object sender, EventArgs e)
+        {
+            btn_logout.BackColor = System.Drawing.Color.White;
         }
     }
 
