@@ -84,7 +84,7 @@ namespace DangNhap
                 DataGridViewRow row = this.dataGridView_Lich.Rows[e.RowIndex];
                 textBoxSoTiet.Text = row.Cells["SoTiet"].Value.ToString();
                 textBoxHoTen.Text = row.Cells["HoTenGV"].Value.ToString();
-                textBoxMaLop.Text = row.Cells["MALMH"].Value.ToString();
+                textBoxMaLop.Text = row.Cells["MaLMH"].Value.ToString();
                 textBoxKip.Text = row.Cells["KipHoc"].Value.ToString();
             }
         }

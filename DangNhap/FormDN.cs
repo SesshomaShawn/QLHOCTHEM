@@ -72,6 +72,8 @@ namespace DangNhap
                     HocSinh hs = new HocSinh();
                     hs.Tendangnhap = this.TextUser.Text;
                     hs.password = this.textPass_see.Text;
+
+               
                     hs.ShowDialog();
                     this.Close();
 
