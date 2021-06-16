@@ -36,6 +36,18 @@ namespace DangNhap
 
         private void Lop_DaDangKy_Load(object sender, EventArgs e)
         {
+            dataGridView_Lich.BorderStyle = BorderStyle.FixedSingle;
+            dataGridView_Lich.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridView_Lich.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView_Lich.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dataGridView_Lich.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridView_Lich.BackgroundColor = Color.White;
+
+            dataGridView_Lich.EnableHeadersVisualStyles = false;
+            dataGridView_Lich.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView_Lich.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dataGridView_Lich.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridView_Lich.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
             SqlConnection con = new SqlConnection();
             con = cn.GetConnection();
             SqlCommand cmd = new SqlCommand();
@@ -69,7 +81,7 @@ namespace DangNhap
                 DataSet dt = new DataSet();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
-                dataGridViewLopDaDangKy.DataSource = dt.Tables[0];
+                dataGridView_Lich.DataSource = dt.Tables[0];
                 con.Close();
             }
             catch
@@ -78,23 +90,32 @@ namespace DangNhap
             }
         }
 
-        private void dataGridViewLopDaDangKy_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dataGridViewLopDaDangKy.Rows[e.RowIndex];
-                textBoxSoTiet.Text = row.Cells["SoTiet"].Value.ToString();
-                textBoxHoTen.Text = row.Cells["HoTenGV"].Value.ToString();
-                textBox1MaLMH.Text = row.Cells["TenLMH"].Value.ToString();
-                textBoxKipHoc.Text = row.Cells["KipHoc"].Value.ToString();
-                textBoxMaLichHoc.Text = row.Cells["MaLichHoc"].Value.ToString();
-                textBoxNgayHoc.Text = row.Cells["NgayHoc"].Value.ToString();
-            }
-        }
-
         private void comboTenLop_SelectedIndexChanged(object sender, EventArgs e)
         {
  
+        }
+
+        private void dataGridView_Lich_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.dataGridView_Lich.Rows[e.RowIndex];
+                    textBoxSoTiet.Text = row.Cells["SoTiet"].Value.ToString();
+                    textBoxHoTen.Text = row.Cells["HoTenGV"].Value.ToString();
+                    textBox1MaLMH.Text = row.Cells["MALMH"].Value.ToString();
+                    textBoxKipHoc.Text = row.Cells["KipHoc"].Value.ToString();
+                    textBoxMaLichHoc.Text = row.Cells["MaLichHoc"].Value.ToString();
+                    DateTime date = (DateTime)row.Cells["NgayHoc"].Value;
+                    textBoxNgayHoc.Text = date.ToString("dd/MM/yyyy");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Chưa có dữ liệu!");
+            }
+          
         }
     }
 }

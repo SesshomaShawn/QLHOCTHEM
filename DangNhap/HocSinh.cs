@@ -81,52 +81,7 @@ namespace DangNhap
             }
             else panel_LichHoc.Visible = false;
         }
-        private void button1_MouseEnter(object sender, EventArgs e)
-        {
-            //btn_TrangChu.BackColor = System.Drawing.Color.FromArgb(192, 0, 192);
-        }
-
-        private void btn_TrangChu_MouseLeave(object sender, EventArgs e)
-        {
-            //btn_TrangChu.BackColor = System.Drawing.Color.Purple;
-        }
-
-        private void btn_Xemlichhoc_MouseEnter(object sender, EventArgs e)
-        {
-            //btn_Xemlichhoc.BackColor = System.Drawing.Color.FromArgb(192, 0, 192);
-        }
-
-        private void btn_Xemlichhoc_MouseLeave(object sender, EventArgs e)
-        {
-            //btn_Xemlichhoc.BackColor = System.Drawing.Color.Purple;
-        }
-
-        private void button4_MouseEnter(object sender, EventArgs e)
-        {
-            //btn_hocphi.BackColor = System.Drawing.Color.FromArgb(192, 0, 192);
-        }
-
-        private void button4_MouseLeave(object sender, EventArgs e)
-        {
-           // btn_hocphi.BackColor = System.Drawing.Color.Purple;
-        }
-
-
-        private void btn_DoiMK_MouseEnter(object sender, EventArgs e)
-        {
-            //btn_DoiMK.BackColor = System.Drawing.Color.FromArgb(192, 0, 192);
-        }
-
-        private void btn_DoiMK_MouseLeave(object sender, EventArgs e)
-        {
-            //btn_DoiMK.BackColor = System.Drawing.Color.Purple;
-        }
-
-        private void btn_close_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private void btn_TrangChu_Click(object sender, EventArgs e)
         {
             if (!panel3.Controls.Contains(home.Instance))
@@ -161,73 +116,7 @@ namespace DangNhap
             HienLichHoc();
         }
 
-        private void btn_Toan_Click(object sender, EventArgs e)
-        {
-            //AnLichHoc();
-            if (!panel3.Controls.Contains(Lop_DaDangKy.Instance))
-            {
-                panel3.Controls.Add(Lop_DaDangKy.Instance);
-                Lop_DaDangKy.Instance.Dock = DockStyle.Fill;
-                Lop_DaDangKy.Instance.BringToFront();
-            }
-            else
-                Lop_DaDangKy.Instance.BringToFront();
-        }
-
-        private void btn_Li_Click(object sender, EventArgs e)
-        {
-            //AnLichHoc();
-            if (!panel3.Controls.Contains(Lop_ChuaDangKy.Instance))
-            {
-                panel3.Controls.Add(Lop_ChuaDangKy.Instance);
-                Lop_ChuaDangKy.Instance.Dock = DockStyle.Fill;
-                Lop_ChuaDangKy.Instance.BringToFront();
-            }
-            else
-                Lop_ChuaDangKy.Instance.BringToFront();
-
-        }
-
-        private void btn_Hoa_Click(object sender, EventArgs e)
-        {
-            //AnLichHoc();
-            if (!panel3.Controls.Contains(TimKiemLichHoc_Ngay.Instance))
-            {
-                panel3.Controls.Add(TimKiemLichHoc_Ngay.Instance);
-                TimKiemLichHoc_Ngay.Instance.Dock = DockStyle.Fill;
-                TimKiemLichHoc_Ngay.Instance.BringToFront();
-            }
-            else
-                TimKiemLichHoc_Ngay.Instance.BringToFront();
-        }
-
-        private void tbn_Van_Click(object sender, EventArgs e)
-        {
-            //AnLichHoc();
-            if (!panel3.Controls.Contains(TimKiemLichHoc.Instance))
-            {
-                panel3.Controls.Add(TimKiemLichHoc.Instance);
-                TimKiemLichHoc.Instance.Dock = DockStyle.Fill;
-                TimKiemLichHoc.Instance.BringToFront();
-            }
-            else
-                TimKiemLichHoc.Instance.BringToFront();
-        }
-
-
-        private void btn_Anh_Click(object sender, EventArgs e)
-        {
-            //AnLichHoc();
-            if (!panel3.Controls.Contains(Anh.Instance))
-            {
-                panel3.Controls.Add(Anh.Instance);
-                Anh.Instance.Dock = DockStyle.Fill;
-                Anh.Instance.BringToFront();
-            }
-            else
-                Anh.Instance.BringToFront();
-        }
-
+        
         private void Btn_DoiMK_Click(object sender, EventArgs e)
         {
             DoiMatKhau dmk = new DoiMatKhau();
@@ -254,6 +143,55 @@ namespace DangNhap
         private void HocSinh_Load(object sender, EventArgs e)
         {
             this.label1.Text = "Xin chào " + layten() + " !";
+        }
+
+
+        private void btn_DaDangKy_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(Lop_DaDangKy.Instance))
+            {
+                panel3.Controls.Add(Lop_DaDangKy.Instance);
+                Lop_DaDangKy.Instance.Dock = DockStyle.Fill;
+                Lop_DaDangKy.Instance.BringToFront();
+            }
+            else
+                Lop_DaDangKy.Instance.BringToFront();
+        }
+
+        private void btn_ChuaDangKy_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(Lop_ChuaDangKy.Instance))
+            {
+                panel3.Controls.Add(Lop_ChuaDangKy.Instance);
+                Lop_ChuaDangKy.Instance.Dock = DockStyle.Fill;
+                Lop_ChuaDangKy.Instance.BringToFront();
+            }
+            else
+                Lop_ChuaDangKy.Instance.BringToFront();
+        }
+
+        private void btn_TheoNgay_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(TimKiemLichHoc_Ngay.Instance))
+            {
+                panel3.Controls.Add(TimKiemLichHoc_Ngay.Instance);
+                TimKiemLichHoc_Ngay.Instance.Dock = DockStyle.Fill;
+                TimKiemLichHoc_Ngay.Instance.BringToFront();
+            }
+            else
+                TimKiemLichHoc_Ngay.Instance.BringToFront();
+        }
+
+        private void tbn_TheoThoiGian_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(TimKiemLichHoc.Instance))
+            {
+                panel3.Controls.Add(TimKiemLichHoc.Instance);
+                TimKiemLichHoc.Instance.Dock = DockStyle.Fill;
+                TimKiemLichHoc.Instance.BringToFront();
+            }
+            else
+                TimKiemLichHoc.Instance.BringToFront();
         }
     }
 }

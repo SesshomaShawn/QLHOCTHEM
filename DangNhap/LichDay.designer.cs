@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cbbTenLop = new System.Windows.Forms.ComboBox();
@@ -198,6 +199,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Lich.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Lich.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Lich.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLichHoc,
@@ -210,8 +219,8 @@
             this.dataGridView_Lich.Name = "dataGridView_Lich";
             this.dataGridView_Lich.ReadOnly = true;
             this.dataGridView_Lich.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_Lich.RowTemplate.Height = 24;
             this.dataGridView_Lich.Size = new System.Drawing.Size(1082, 436);
             this.dataGridView_Lich.TabIndex = 1;
