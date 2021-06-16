@@ -13,9 +13,13 @@ namespace DangNhap
     public partial class HocSinh : Form
     {
         private Connection cn;
-        string ten = "";       
-        public string Tendangnhap = "";
+        private static string hoTen = "";
+        private static string maHS = "";
+        public static string Tendangnhap = "";
         public string password = "";
+        public static string MaHS { get => maHS; set => maHS = value; }
+        public static string TenDN { get => Tendangnhap; set => Tendangnhap= value; }
+        public static string HoTen { get => hoTen; set => hoTen = value; }
         public HocSinh()
         {
             cn = new Connection();
@@ -25,28 +29,39 @@ namespace DangNhap
             home.Instance.Dock = DockStyle.Fill;
             home.Instance.BringToFront();
         }
-        private string layten()
-        {         
-            try
+        public static string TimMaHS()
+        {
+
+            FormDN dangNhap = new FormDN();
+
+            DataTable dataTable = dangNhap.Bang();
+
+            for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                SqlConnection con = cn.GetConnection();
-                con.Open();
-                string tk = this.Tendangnhap;              
-                string sql = "Select HoTenHS from HOCSINH where Email = '" + tk + " '";
-                SqlCommand cmd = new SqlCommand(sql, con);
-                SqlDataReader dt = cmd.ExecuteReader();
-                while (dt.Read())
+                string ten = ((string)dataTable.Rows[i]["TenDN"]).Trim();
+                if (TenDN == ((string)dataTable.Rows[i]["TenDN"]).Trim())
                 {
-                    ten = dt.GetValue(dt.GetOrdinal("HoTenHS")).ToString();
-                    string[] arrayStr = ten.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);                 
-                    ten = arrayStr[arrayStr.Length - 1];
+                    MaHS = (string)dataTable.Rows[i]["Ma"];
                 }
             }
-            catch 
-            {
+            return MaHS;
+        }
+        private static string layten()
+        {
+            FormDN dangNhap = new FormDN();
 
+            DataTable dataTable = dangNhap.Bang();
+
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                string ten = ((string)dataTable.Rows[i]["TenDN"]).Trim();
+                if (TenDN == ((string)dataTable.Rows[i]["TenDN"]).Trim())
+                {
+                    HoTen = (string)dataTable.Rows[i]["HoTen"];
+                }
             }
-            return ten;
+            string first_name = HoTen.Substring(HoTen.LastIndexOf(' ') + 1);
+            return first_name;
         }
         public void MacDinh()
         {
@@ -130,7 +145,7 @@ namespace DangNhap
 
             AnLichHoc();
             HocPhi hp = new HocPhi();
-            hp.email = this.Tendangnhap;
+            hp.email = Tendangnhap;
             if (!panel3.Controls.Contains(hp))
             {
                 panel3.Controls.Add(hp);
@@ -189,14 +204,14 @@ namespace DangNhap
         private void tbn_Van_Click(object sender, EventArgs e)
         {
             //AnLichHoc();
-            if (!panel3.Controls.Contains(Van.Instance))
+            if (!panel3.Controls.Contains(TimKiemLichHoc.Instance))
             {
-                panel3.Controls.Add(Van.Instance);
-                Van.Instance.Dock = DockStyle.Fill;
-                Van.Instance.BringToFront();
+                panel3.Controls.Add(TimKiemLichHoc.Instance);
+                TimKiemLichHoc.Instance.Dock = DockStyle.Fill;
+                TimKiemLichHoc.Instance.BringToFront();
             }
             else
-                Van.Instance.BringToFront();
+                TimKiemLichHoc.Instance.BringToFront();
         }
 
 
@@ -216,7 +231,7 @@ namespace DangNhap
         private void Btn_DoiMK_Click(object sender, EventArgs e)
         {
             DoiMatKhau dmk = new DoiMatKhau();
-            dmk.Ten = this.Tendangnhap;
+            dmk.Ten = Tendangnhap;
             dmk.pass = this.password;
             if (!panel3.Controls.Contains(dmk))
             {
