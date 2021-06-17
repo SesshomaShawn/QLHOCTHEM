@@ -29,8 +29,8 @@ namespace DangNhap
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboTenLop = new System.Windows.Forms.ComboBox();
@@ -55,6 +55,7 @@ namespace DangNhap
             this.KipHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,6 +65,7 @@ namespace DangNhap
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.ForeColor = System.Drawing.Color.Black;
@@ -74,12 +76,12 @@ namespace DangNhap
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightBlue;
+            this.panel3.BackColor = System.Drawing.Color.LemonChiffon;
             this.panel3.Controls.Add(this.comboTenLop);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(759, 16);
+            this.panel3.Location = new System.Drawing.Point(758, 44);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(288, 218);
+            this.panel3.Size = new System.Drawing.Size(288, 205);
             this.panel3.TabIndex = 1;
             // 
             // comboTenLop
@@ -96,7 +98,7 @@ namespace DangNhap
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.SteelBlue;
+            this.label6.BackColor = System.Drawing.Color.LightCoral;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(78, 30);
@@ -121,9 +123,9 @@ namespace DangNhap
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.textBoxHoTen);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(25, 16);
+            this.panel2.Location = new System.Drawing.Point(24, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(671, 218);
+            this.panel2.Size = new System.Drawing.Size(671, 205);
             this.panel2.TabIndex = 0;
             // 
             // textBoxSoTiet
@@ -264,14 +266,14 @@ namespace DangNhap
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Lich.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Lich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_Lich.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Lich.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLichHoc,
@@ -280,14 +282,14 @@ namespace DangNhap
             this.KipHoc,
             this.SoTiet,
             this.HoTenGV});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Lich.Location = new System.Drawing.Point(25, 265);
             this.dataGridView_Lich.Name = "dataGridView_Lich";
             this.dataGridView_Lich.RowHeadersWidth = 51;
@@ -344,6 +346,17 @@ namespace DangNhap
             this.HoTenGV.Name = "HoTenGV";
             this.HoTenGV.Width = 229;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.IndianRed;
+            this.label8.Location = new System.Drawing.Point(391, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(277, 31);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Chi tiết lớp đã đăng kí";
+            // 
             // Lop_DaDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,6 +369,7 @@ namespace DangNhap
             this.Size = new System.Drawing.Size(1372, 801);
             this.Load += new System.EventHandler(this.Lop_DaDangKy_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -390,5 +404,6 @@ namespace DangNhap
         private System.Windows.Forms.DataGridViewTextBoxColumn KipHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTiet;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTenGV;
+        private System.Windows.Forms.Label label8;
     }
 }

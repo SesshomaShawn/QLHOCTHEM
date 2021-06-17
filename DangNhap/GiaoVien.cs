@@ -64,7 +64,7 @@ namespace DangNhap
             }
             else panel2.Visible = false;
         }
-
+        
 
         private void btn_XemLuong_MouseEnter(object sender, EventArgs e)
         {
@@ -335,7 +335,7 @@ namespace DangNhap
         {
 
         }
-
+        
         private void buttonXem_theoLop_MouseLeave(object sender, EventArgs e)
         {
             buttonXem_theoLop.BackColor = System.Drawing.Color.White;
@@ -370,7 +370,7 @@ namespace DangNhap
         {
 
         }
-
+        
         private void buttonXem_theoLop_Click(object sender, EventArgs e)
         {
             if (!panel3.Controls.Contains(LichDay.Instance))
