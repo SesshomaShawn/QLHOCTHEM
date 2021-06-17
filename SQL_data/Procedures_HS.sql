@@ -227,7 +227,7 @@ and LOPHOC.TenLMH = N'Hóa 12_1'--@TenLMH
 end
 GO
 
--------------------------------------------------------------------------------
+------------------Tìm kiếm lịch học theo ngày -------------------------------------------------------------
 create proc Search_lichhoc (@MaHS char(10),@day1 date, @day2 date)
 as 
 begin
@@ -271,7 +271,7 @@ GO
 ---- Xem lịch học các lớp đã đăng ký
 CREATE PROC XemLichHoc_HS1 (@MaHS CHAR(10), @TenLMH NvarCHAR(50)) AS
 BEGIN
-    SELECT LICHHOC.MaLichHoc, LOPHOC.TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+    SELECT LICHHOC.MaLichHoc, LOPHOC.TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV, LOPHOC.MaLMH
 	FROM dbo.LICHHOC, dbo.LOPHOC, DIEMDANH, GIAOVIEN
 	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV
 	      AND LICHHOC.MaLMH = LOPHOC.MALMH
@@ -281,7 +281,7 @@ BEGIN
 	
 END
 go
-
+ 
  EXEC XemLichHoc_HS1 N'HS006', N'Hóa 10'
 
  -- Xem các lớp chưa đăng ký 
@@ -300,7 +300,7 @@ GO
 ---- xem lich học của các lớp chưa đăng ký 
 CREATE PROC XemLichHoc_HS2 (@TenLMH NvarCHAR(50)) AS
 BEGIN
-    SELECT LICHHOC.MaLichHoc, LOPHOC.TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+    SELECT LICHHOC.MaLichHoc, LOPHOC.TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV, LOPHOC.MaLMH
 	FROM dbo.LICHHOC, dbo.LOPHOC, GIAOVIEN
 	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV
 	      AND LICHHOC.MaLMH = LOPHOC.MALMH    
@@ -308,4 +308,5 @@ BEGIN
 	
 END
 go
-  EXEC XemLichHoc_HS2 N'Hóa 10'
+ 
+  EXEC XemLichHoc_HS2 N'Hóa 11'
