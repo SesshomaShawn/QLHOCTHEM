@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLGiaoVien));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -69,21 +70,19 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1136, 223);
+            this.panel1.Size = new System.Drawing.Size(1372, 238);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.BackColor = System.Drawing.Color.Linen;
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -91,14 +90,14 @@
             this.panel2.Controls.Add(this.buttonSua);
             this.panel2.Controls.Add(this.buttonThem);
             this.panel2.Controls.Add(this.buttonXoa);
-            this.panel2.Location = new System.Drawing.Point(56, 34);
+            this.panel2.Location = new System.Drawing.Point(39, 45);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(473, 171);
             this.panel2.TabIndex = 18;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::DangNhap.Properties.Resources.edit;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = global::DangNhap.Properties.Resources.remove_user;
             this.pictureBox3.Location = new System.Drawing.Point(326, 77);
             this.pictureBox3.Name = "pictureBox3";
@@ -108,7 +107,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DangNhap.Properties.Resources.remove_user;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = global::DangNhap.Properties.Resources.remove_user;
             this.pictureBox2.Location = new System.Drawing.Point(181, 77);
             this.pictureBox2.Name = "pictureBox2";
@@ -118,7 +117,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DangNhap.Properties.Resources.add_user;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = global::DangNhap.Properties.Resources.add_user;
             this.pictureBox1.Location = new System.Drawing.Point(32, 77);
             this.pictureBox1.Name = "pictureBox1";
@@ -140,7 +139,8 @@
             // 
             // buttonSua
             // 
-            this.buttonSua.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSua.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSua.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSua.ForeColor = System.Drawing.Color.Black;
             this.buttonSua.Location = new System.Drawing.Point(364, 77);
@@ -153,7 +153,8 @@
             // 
             // buttonThem
             // 
-            this.buttonThem.BackColor = System.Drawing.Color.Transparent;
+            this.buttonThem.BackColor = System.Drawing.Color.LimeGreen;
+            this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThem.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThem.ForeColor = System.Drawing.Color.Black;
             this.buttonThem.Location = new System.Drawing.Point(70, 77);
@@ -166,7 +167,8 @@
             // 
             // buttonXoa
             // 
-            this.buttonXoa.BackColor = System.Drawing.Color.Transparent;
+            this.buttonXoa.BackColor = System.Drawing.Color.IndianRed;
+            this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonXoa.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoa.ForeColor = System.Drawing.Color.Black;
             this.buttonXoa.Location = new System.Drawing.Point(219, 77);
@@ -180,14 +182,13 @@
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.BackColor = System.Drawing.Color.Linen;
             this.panel3.Controls.Add(this.textBoxTimKiem);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.comboBoxLoaiTimKiem);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(542, 34);
+            this.panel3.Location = new System.Drawing.Point(534, 45);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(552, 171);
             this.panel3.TabIndex = 2;
@@ -255,15 +256,15 @@
             // 
             this.dataGridViewGV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewGV.BackgroundColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewGV.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewGV.ColumnHeadersHeight = 29;
             this.dataGridViewGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaGV,
@@ -275,13 +276,14 @@
             this.MaDM,
             this.MatKhau,
             this.Email});
-            this.dataGridViewGV.Location = new System.Drawing.Point(16, 229);
+            this.dataGridViewGV.Location = new System.Drawing.Point(25, 265);
             this.dataGridViewGV.Name = "dataGridViewGV";
             this.dataGridViewGV.RowHeadersVisible = false;
             this.dataGridViewGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewGV.Size = new System.Drawing.Size(1102, 450);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewGV.Size = new System.Drawing.Size(1082, 436);
             this.dataGridViewGV.TabIndex = 0;
             this.dataGridViewGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGV_CellClick);
             this.dataGridViewGV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGV_CellContentDoubleClick);
@@ -364,11 +366,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.dataGridViewGV);
             this.Controls.Add(this.panel1);
+            this.Location = new System.Drawing.Point(25, 265);
             this.Name = "QLGiaoVien";
-            this.Size = new System.Drawing.Size(1136, 693);
+            this.Size = new System.Drawing.Size(1372, 801);
             this.Load += new System.EventHandler(this.QLGiaoVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

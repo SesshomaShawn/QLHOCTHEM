@@ -60,7 +60,7 @@ go
 create proc Search_lichday_theoNgay (@MaGV char(10),@day date)
 as 
 begin
-	SELECT MaLichHoc, TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+	SELECT MaLichHoc, TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV, LOPHOC.MALMH
 	FROM LICHHOC, LOPHOC, GIAOVIEN
 	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV AND GIAOVIEN.MaGV = LICHHOC.MaGV AND LICHHOC.MaLMH = dbo.LOPHOC.MaLMH AND LICHHOC.MaGV = dbo.LOPHOC.MaGV
 	      AND LICHHOC.MaGV = @MaGV 

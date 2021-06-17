@@ -87,17 +87,17 @@ namespace DangNhap
         {
             dtViewli.BorderStyle = BorderStyle.None;
             dtViewli.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            //dtViewli.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dtViewli.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dtViewli.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
             dtViewli.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            //dtViewli.BackgroundColor = Color.White;
+            dtViewli.BackgroundColor = Color.White;
 
             dtViewli.EnableHeadersVisualStyles = false;
-            //dtViewli.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            //dtViewli.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            //dtViewli.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dtViewli.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dtViewli.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dtViewli.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
-        //asdfsasdfsdfasdfsdf
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             

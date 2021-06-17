@@ -46,7 +46,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox1.BackColor = System.Drawing.Color.MistyRose;
             this.groupBox1.Controls.Add(this.btn_backup);
             this.groupBox1.Controls.Add(this.btn_browser1);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -54,9 +54,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(22, 26);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(601, 128);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -64,10 +64,11 @@
             // 
             // btn_backup
             // 
-            this.btn_backup.BackColor = System.Drawing.Color.Lavender;
+            this.btn_backup.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_backup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_backup.ForeColor = System.Drawing.Color.Black;
             this.btn_backup.Location = new System.Drawing.Point(486, 76);
-            this.btn_backup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_backup.Margin = new System.Windows.Forms.Padding(2);
             this.btn_backup.Name = "btn_backup";
             this.btn_backup.Size = new System.Drawing.Size(96, 33);
             this.btn_backup.TabIndex = 3;
@@ -77,11 +78,12 @@
             // 
             // btn_browser1
             // 
-            this.btn_browser1.BackColor = System.Drawing.Color.Lavender;
+            this.btn_browser1.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_browser1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_browser1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_browser1.ForeColor = System.Drawing.Color.Black;
             this.btn_browser1.Location = new System.Drawing.Point(486, 40);
-            this.btn_browser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_browser1.Margin = new System.Windows.Forms.Padding(2);
             this.btn_browser1.Name = "btn_browser1";
             this.btn_browser1.Size = new System.Drawing.Size(96, 32);
             this.btn_browser1.TabIndex = 2;
@@ -92,7 +94,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(100, 43);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(382, 26);
             this.textBox1.TabIndex = 1;
@@ -109,7 +111,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Silver;
+            this.groupBox2.BackColor = System.Drawing.Color.LightBlue;
             this.groupBox2.Controls.Add(this.btn_restore);
             this.groupBox2.Controls.Add(this.btn_browser2);
             this.groupBox2.Controls.Add(this.textBox2);
@@ -117,9 +119,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(22, 208);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(601, 128);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
@@ -127,10 +129,11 @@
             // 
             // btn_restore
             // 
-            this.btn_restore.BackColor = System.Drawing.Color.Lavender;
+            this.btn_restore.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_restore.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_restore.ForeColor = System.Drawing.Color.Black;
             this.btn_restore.Location = new System.Drawing.Point(486, 81);
-            this.btn_restore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_restore.Margin = new System.Windows.Forms.Padding(2);
             this.btn_restore.Name = "btn_restore";
             this.btn_restore.Size = new System.Drawing.Size(96, 34);
             this.btn_restore.TabIndex = 3;
@@ -140,11 +143,12 @@
             // 
             // btn_browser2
             // 
-            this.btn_browser2.BackColor = System.Drawing.Color.Lavender;
+            this.btn_browser2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_browser2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_browser2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_browser2.ForeColor = System.Drawing.Color.Black;
             this.btn_browser2.Location = new System.Drawing.Point(486, 45);
-            this.btn_browser2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_browser2.Margin = new System.Windows.Forms.Padding(2);
             this.btn_browser2.Name = "btn_browser2";
             this.btn_browser2.Size = new System.Drawing.Size(96, 32);
             this.btn_browser2.TabIndex = 2;
@@ -155,7 +159,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(100, 48);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(382, 26);
             this.textBox2.TabIndex = 1;
@@ -179,13 +183,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(634, 366);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.ForeColor = System.Drawing.Color.DarkGray;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSaoLuu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sao Lưu";

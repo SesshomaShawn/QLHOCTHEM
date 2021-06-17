@@ -28,21 +28,21 @@
           /// </summary>
           private void InitializeComponent()
           {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.chartGV_Tron = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartGV_Cot = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartGV_Tron = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartGV_Tron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGV_Cot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartGV_Tron)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -77,7 +77,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.chartGV_Cot);
             this.panel1.Controls.Add(this.chartGV_Tron);
@@ -89,48 +89,48 @@
             this.panel1.Size = new System.Drawing.Size(1090, 539);
             this.panel1.TabIndex = 4;
             // 
+            // chartGV_Cot
+            // 
+            this.chartGV_Cot.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chartGV_Cot.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.chartGV_Cot.BorderlineColor = System.Drawing.Color.Silver;
+            chartArea1.Name = "ChartArea1";
+            this.chartGV_Cot.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartGV_Cot.Legends.Add(legend1);
+            this.chartGV_Cot.Location = new System.Drawing.Point(165, 138);
+            this.chartGV_Cot.Name = "chartGV_Cot";
+            this.chartGV_Cot.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Số lượng GV";
+            this.chartGV_Cot.Series.Add(series1);
+            this.chartGV_Cot.Size = new System.Drawing.Size(363, 309);
+            this.chartGV_Cot.TabIndex = 0;
+            this.chartGV_Cot.Text = "Thống kê số lượng GV";
+            title1.Name = "Thống kê số lượng giáo viên";
+            this.chartGV_Cot.Titles.Add(title1);
+            // 
             // chartGV_Tron
             // 
             this.chartGV_Tron.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.chartGV_Tron.BackColor = System.Drawing.Color.Silver;
+            this.chartGV_Tron.BackColor = System.Drawing.Color.AntiqueWhite;
             this.chartGV_Tron.BorderlineColor = System.Drawing.Color.Silver;
-            chartArea8.Name = "ChartArea1";
-            this.chartGV_Tron.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chartGV_Tron.Legends.Add(legend8);
+            chartArea2.Name = "ChartArea1";
+            this.chartGV_Tron.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartGV_Tron.Legends.Add(legend2);
             this.chartGV_Tron.Location = new System.Drawing.Point(590, 138);
             this.chartGV_Tron.Name = "chartGV_Tron";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.Legend = "Legend1";
-            series8.Name = "Số lượng GV";
-            this.chartGV_Tron.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "Số lượng GV";
+            this.chartGV_Tron.Series.Add(series2);
             this.chartGV_Tron.Size = new System.Drawing.Size(328, 309);
             this.chartGV_Tron.TabIndex = 1;
             this.chartGV_Tron.Text = "chart2";
             this.chartGV_Tron.Click += new System.EventHandler(this.chartGV_Tron_Click);
-            // 
-            // chartGV_Cot
-            // 
-            this.chartGV_Cot.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.chartGV_Cot.BackColor = System.Drawing.Color.Silver;
-            this.chartGV_Cot.BorderlineColor = System.Drawing.Color.Silver;
-            chartArea7.Name = "ChartArea1";
-            this.chartGV_Cot.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chartGV_Cot.Legends.Add(legend7);
-            this.chartGV_Cot.Location = new System.Drawing.Point(165, 138);
-            this.chartGV_Cot.Name = "chartGV_Cot";
-            this.chartGV_Cot.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Số lượng GV";
-            this.chartGV_Cot.Series.Add(series7);
-            this.chartGV_Cot.Size = new System.Drawing.Size(363, 309);
-            this.chartGV_Cot.TabIndex = 0;
-            this.chartGV_Cot.Text = "Thống kê số lượng GV";
-            title4.Name = "Thống kê số lượng giáo viên";
-            this.chartGV_Cot.Titles.Add(title4);
             // 
             // TK_GiaoVien
             // 
@@ -143,8 +143,8 @@
             this.Size = new System.Drawing.Size(1090, 539);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartGV_Tron)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGV_Cot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartGV_Tron)).EndInit();
             this.ResumeLayout(false);
 
           }

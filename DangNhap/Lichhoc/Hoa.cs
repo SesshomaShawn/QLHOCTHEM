@@ -88,15 +88,15 @@ namespace DangNhap
         {
             dtViewhoa.BorderStyle = BorderStyle.None;
             dtViewhoa.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            //dtViewhoa.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dtViewhoa.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dtViewhoa.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
             dtViewhoa.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            //dtViewhoa.BackgroundColor = Color.White;
+            dtViewhoa.BackgroundColor = Color.White;
 
             dtViewhoa.EnableHeadersVisualStyles = false;
-            //dtViewhoa.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            //dtViewhoa.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-           //dtViewhoa.ColumnHeadersDefault*///CellStyle.ForeColor = Color.White;
+            dtViewhoa.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dtViewhoa.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+           dtViewhoa.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
     }
 }
