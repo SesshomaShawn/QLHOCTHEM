@@ -277,7 +277,7 @@ namespace DangNhap
             // 
             // panelSearch
             // 
-            this.panelSearch.BackColor = System.Drawing.Color.LightBlue;
+            this.panelSearch.BackColor = System.Drawing.Color.LemonChiffon;
             this.panelSearch.Controls.Add(this.dateTimePicker1);
             this.panelSearch.Controls.Add(this.label6);
             this.panelSearch.Controls.Add(this.label5);
@@ -310,7 +310,7 @@ namespace DangNhap
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.BackColor = System.Drawing.Color.LightCoral;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(99, 15);

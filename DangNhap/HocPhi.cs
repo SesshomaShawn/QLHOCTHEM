@@ -37,6 +37,7 @@ namespace DangNhap
         {
             if (!string.IsNullOrWhiteSpace(cbbnam.Text) && !string.IsNullOrWhiteSpace(cbbthang.Text))
             {
+ 
                 try
                 {
                     SqlConnection con = new SqlConnection();
@@ -65,6 +66,7 @@ namespace DangNhap
                 {
                     MessageBox.Show("Vui lòng kiểm tra lại thông tin!");
                 }
+                
             }
             else
             {

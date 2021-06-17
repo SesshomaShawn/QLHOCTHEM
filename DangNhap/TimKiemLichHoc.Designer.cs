@@ -174,7 +174,9 @@ namespace DangNhap
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Lich.BackgroundColor = System.Drawing.Color.White;
+
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -191,7 +193,9 @@ namespace DangNhap
             this.SoTiet,
             this.HoTenGV,
             this.MALMH});
+
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -199,8 +203,10 @@ namespace DangNhap
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle2;
+
             this.dataGridView_Lich.Location = new System.Drawing.Point(33, 326);
             this.dataGridView_Lich.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.dataGridView_Lich.Name = "dataGridView_Lich";
             this.dataGridView_Lich.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -298,7 +304,7 @@ namespace DangNhap
             // 
             // panelSearch
             // 
-            this.panelSearch.BackColor = System.Drawing.Color.LightBlue;
+            this.panelSearch.BackColor = System.Drawing.Color.LemonChiffon;
             this.panelSearch.Controls.Add(this.button1);
             this.panelSearch.Controls.Add(this.dtpDay2);
             this.panelSearch.Controls.Add(this.label7);
@@ -313,11 +319,12 @@ namespace DangNhap
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(165, 212);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 36);
             this.button1.TabIndex = 5;
@@ -371,11 +378,11 @@ namespace DangNhap
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.SteelBlue;
+            this.label5.BackColor = System.Drawing.Color.LemonChiffon;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(132, 18);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(99, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(177, 42);
             this.label5.TabIndex = 0;

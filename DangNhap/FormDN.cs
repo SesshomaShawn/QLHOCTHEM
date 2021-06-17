@@ -176,6 +176,34 @@ namespace DangNhap
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         }
 
-      
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button3_MouseEnter(object sender, EventArgs e)
+        {
+            button3.BackColor = System.Drawing.Color.White;
+        }
+
+        private void button3_MouseLeave(object sender, EventArgs e)
+        {
+            button3.BackColor = System.Drawing.Color.White;
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = System.Drawing.Color.White;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = System.Drawing.Color.White;
+        }
     }
 }
