@@ -67,41 +67,45 @@ namespace DangNhap
             ad.Fill(ds);
             dsa = ds;
             con.Close();
-          //  try
-          //  {
-                tbMaHD.Text = ds.Rows[0][0].ToString();
-                tbMaHS.Text = ds.Rows[0][1].ToString();
-                tbTenHS.Text = ds.Rows[0][2].ToString();
+            //  try
+            //  {
+            tbMaHD.Text = ds.Rows[0][0].ToString();
+            tbMaHS.Text = ds.Rows[0][1].ToString();
+            tbTenHS.Text = ds.Rows[0][2].ToString();
             try
             {
                 dateTimePicker1.Value = DateTime.Parse(ds.Rows[0][4].ToString());
 
-            } catch
+            }
+            catch
             {
-                label5.Visible = false;
-                dateTimePicker1.Visible = false;
+                dateTimePicker1.Value = DateTime.Now;
+
+                // label5.Visible = false;
+                dateTimePicker1.Visible = true;
+                dateTimePicker1.Enabled = true;
                 button1.Visible = true;
             }
 
-                dateTimePicker2.Value = DateTime.Parse(ds.Rows[0][3].ToString());
+            dateTimePicker2.Value = DateTime.Parse(ds.Rows[0][3].ToString());
             //MessageBox.Show(dateTimePicker2.Value.ToString());
-                tbSDT.Text = ds.Rows[0][5].ToString();
+            tbSDT.Text = ds.Rows[0][5].ToString();
 
-                int nCount = dataGridView1.RowCount;
-                for (int i = 0; i < nCount - 1; i++)
-                {
-                    int i_sotiet = int.Parse(dataGridView1.Rows[i].Cells["TongSoTiet"].Value.ToString());
-                    int i_sotien = int.Parse(dataGridView1.Rows[i].Cells["SoTien"].Value.ToString());
-                    tongtiet += i_sotiet;
-                    tongtien += i_sotiet * i_sotien;
-                }
-
-                tbTongTiet.Text = tongtiet.ToString();
-                tbTongTien.Text = formatDecimal(tongtien.ToString());
-           /* } catch (Exception)
+            int nCount = dataGridView1.RowCount;
+            for (int i = 0; i < nCount - 1; i++)
             {
-                MessageBox.Show("Chưa có dữ liệu!");
-            }*/
+                int i_sotiet = int.Parse(dataGridView1.Rows[i].Cells["TongSoTiet"].Value.ToString());
+                int i_sotien = int.Parse(dataGridView1.Rows[i].Cells["SoTien"].Value.ToString());
+                tongtiet += i_sotiet;
+                tongtien += i_sotiet * i_sotien;
+            }
+
+            tbTongTiet.Text = tongtiet.ToString();
+            tbTongTien.Text = formatDecimal(tongtien.ToString());
+            /* } catch (Exception)
+             {
+                 MessageBox.Show("Chưa có dữ liệu!");
+             }*/
 
         }
 
@@ -365,12 +369,11 @@ namespace DangNhap
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            DateTime d = DateTime.Now;
             //MessageBox.Show(d.ToString());
             SqlConnection con = new SqlConnection();
             con = cn.GetConnection();
@@ -379,7 +382,7 @@ namespace DangNhap
             SqlCommand cmd = new SqlCommand("UPDATE HOADON SET NgayNop=@NgayNop,NgayXuat=@NgayXuat,SoTienNop=@SoTienNop, TinhTrang=@TinhTrang, MaHS=@MaHS WHERE (MaHD=@MaHD)", con);
 
             cmd.Parameters.AddWithValue("@MaHD", tbMaHD.Text);
-            cmd.Parameters.AddWithValue("@NgayNop", d.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@NgayNop", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             cmd.Parameters.AddWithValue("@NgayXuat", dateTimePicker2.Value.ToString());
             cmd.Parameters.AddWithValue("@SoTienNop", Convert.ToInt32(tongtien.ToString()));
             cmd.Parameters.AddWithValue("@TinhTrang", "Đã nộp");
