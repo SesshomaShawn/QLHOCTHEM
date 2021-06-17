@@ -135,9 +135,12 @@ namespace DangNhap
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
-            FormDN dn = new FormDN();
-            dn.ShowDialog();
+            if (MessageBox.Show("Bạn có chắc chắn muốn đăng xuất không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                this.Hide();
+                FormDN dn = new FormDN();
+                dn.ShowDialog();
+            }
         }
 
         private void HocSinh_Load(object sender, EventArgs e)
