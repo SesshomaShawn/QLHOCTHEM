@@ -53,7 +53,12 @@ namespace DangNhap
                 da.Fill(dt);
                 dataviewHP.DataSource = dt;
                 con.Close();
-                TBtenLMH.Text = dataviewHP.Rows[0].Cells["monhoc"].Value.ToString();
+                if (dataviewHP.Rows[0].Cells["monhoc"].Value == null)
+                {
+                    MessageBox.Show(" Chưa cập nhật dữ liệu!");
+                    return;
+                }
+                //TBtenLMH.Text = dataviewHP.Rows[0].Cells["monhoc"].Value.ToString();
                 TB_Sotien.Text = dataviewHP.Rows[0].Cells["Sotientiet"].Value.ToString();
                 TB_Sotiet.Text = dataviewHP.Rows[0].Cells["Sotietdihoc"].Value.ToString();
                 txtTinhTrang.Text = dataviewHP.Rows[0].Cells["TinhTrangDong"].Value.ToString();
