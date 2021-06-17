@@ -91,7 +91,7 @@
             this.panel1.Location = new System.Drawing.Point(54, 238);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 1);
-            this.panel1.TabIndex = 6;
+            this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
@@ -110,7 +110,7 @@
             this.button2.Location = new System.Drawing.Point(272, 294);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(32, 32);
-            this.button2.TabIndex = 9;
+            this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button2_MouseDown);
             this.button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button2_MouseUp);

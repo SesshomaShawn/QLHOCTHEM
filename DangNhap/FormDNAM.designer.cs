@@ -50,17 +50,17 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.thucTapCSDLDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.thucTapCSDLDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pn_LichHoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thucTapCSDLDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thucTapCSDLDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -117,7 +117,7 @@
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Size = new System.Drawing.Size(229, 44);
             this.btn_logout.TabIndex = 22;
-            this.btn_logout.Text = "      Đăng xuất";
+            this.btn_logout.Text = "      Đăng xuất ";
             this.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
@@ -157,7 +157,7 @@
             this.btn_SaoLuu.Name = "btn_SaoLuu";
             this.btn_SaoLuu.Size = new System.Drawing.Size(229, 44);
             this.btn_SaoLuu.TabIndex = 16;
-            this.btn_SaoLuu.Text = "       Sao lưu";
+            this.btn_SaoLuu.Text = "      Sao lưu ";
             this.btn_SaoLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_SaoLuu.UseVisualStyleBackColor = false;
             this.btn_SaoLuu.Click += new System.EventHandler(this.btn_SaoLuu_Click);
@@ -212,8 +212,8 @@
             this.btn_ChemistryAD.Name = "btn_ChemistryAD";
             this.btn_ChemistryAD.Size = new System.Drawing.Size(229, 41);
             this.btn_ChemistryAD.TabIndex = 4;
-            this.btn_ChemistryAD.Text = "    Hóa học    ";
-            this.btn_ChemistryAD.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btn_ChemistryAD.Text = "      Hóa học    ";
+            this.btn_ChemistryAD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_ChemistryAD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_ChemistryAD.UseVisualStyleBackColor = false;
             this.btn_ChemistryAD.Click += new System.EventHandler(this.btn_ChemistryAD_Click);
@@ -234,7 +234,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(229, 41);
             this.button9.TabIndex = 3;
-            this.button9.Text = "    Văn học    ";
+            this.button9.Text = "     Văn học     ";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = false;
@@ -256,7 +256,7 @@
             this.btn_EnglishAD.Name = "btn_EnglishAD";
             this.btn_EnglishAD.Size = new System.Drawing.Size(229, 41);
             this.btn_EnglishAD.TabIndex = 2;
-            this.btn_EnglishAD.Text = "      Tiếng Anh";
+            this.btn_EnglishAD.Text = "    Tiếng Anh   ";
             this.btn_EnglishAD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_EnglishAD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_EnglishAD.UseVisualStyleBackColor = false;
@@ -278,7 +278,7 @@
             this.btn_PhysicAD.Name = "btn_PhysicAD";
             this.btn_PhysicAD.Size = new System.Drawing.Size(229, 41);
             this.btn_PhysicAD.TabIndex = 1;
-            this.btn_PhysicAD.Text = "        Vật lí      ";
+            this.btn_PhysicAD.Text = "    Vật lí           ";
             this.btn_PhysicAD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_PhysicAD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_PhysicAD.UseVisualStyleBackColor = false;
@@ -300,7 +300,7 @@
             this.btn_MathAD.Name = "btn_MathAD";
             this.btn_MathAD.Size = new System.Drawing.Size(229, 41);
             this.btn_MathAD.TabIndex = 0;
-            this.btn_MathAD.Text = "      Toán học ";
+            this.btn_MathAD.Text = "    Toán học    ";
             this.btn_MathAD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_MathAD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_MathAD.UseVisualStyleBackColor = false;
@@ -321,7 +321,7 @@
             this.XemLichHoc.Name = "XemLichHoc";
             this.XemLichHoc.Size = new System.Drawing.Size(229, 44);
             this.XemLichHoc.TabIndex = 19;
-            this.XemLichHoc.Text = "       Lịch học";
+            this.XemLichHoc.Text = "    Lịch học ";
             this.XemLichHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.XemLichHoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.XemLichHoc.UseVisualStyleBackColor = false;
@@ -342,7 +342,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(229, 44);
             this.button6.TabIndex = 18;
-            this.button6.Text = "         Học phí";
+            this.button6.Text = "     Học phí   ";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = false;
@@ -363,7 +363,7 @@
             this.btnGiaoVien.Name = "btnGiaoVien";
             this.btnGiaoVien.Size = new System.Drawing.Size(229, 44);
             this.btnGiaoVien.TabIndex = 15;
-            this.btnGiaoVien.Text = "      Giáo viên";
+            this.btnGiaoVien.Text = "    Giáo viên";
             this.btnGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGiaoVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGiaoVien.UseVisualStyleBackColor = false;
@@ -384,7 +384,8 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(229, 44);
             this.button5.TabIndex = 17;
-            this.button5.Text = "         Lương";
+            this.button5.Text = "    Lương    ";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -478,8 +479,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thucTapCSDLDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thucTapCSDLDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

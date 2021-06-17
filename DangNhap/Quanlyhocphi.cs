@@ -44,7 +44,7 @@ namespace DangNhap
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             dgvDSHS.DataSource = dt;
-          
+
             con.Close();
         }
 
@@ -60,7 +60,7 @@ namespace DangNhap
             dgvDSHS.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
             dgvDSHS.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             dgvDSHS.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            
+
             loadDSGV();
 
             DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
@@ -109,7 +109,7 @@ namespace DangNhap
                 thang = cbbThang.SelectedItem.ToString();
                 HoaDon hd = new HoaDon(ten, thang, nam);
                 hd.ShowDialog();
-               // loadDSGV();
+                // loadDSGV();
 
             }
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
@@ -121,7 +121,7 @@ namespace DangNhap
                 HoaDon hd = new HoaDon(ten, thang, nam);
 
                 hd.ShowDialog();
-               // loadDSGV();
+                loadDSGV();
 
             }
         }
@@ -169,7 +169,8 @@ namespace DangNhap
             if (comboBox1.SelectedIndex == 0)
             {
                 txt_TenHS.Visible = true;
-            } else
+            }
+            else
             {
                 txt_TenHS.Visible = false;
                 SqlConnection con = new SqlConnection();

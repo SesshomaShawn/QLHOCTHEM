@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 namespace DangNhap
 {//
     public partial class HocPhi : UserControl
-    {     
+    {
         //
         private Connection cn;
         public string email = "";
@@ -20,11 +20,11 @@ namespace DangNhap
         {
             cn = new Connection();
             InitializeComponent();
-            for(int i = 1; i <= 12; i++)
+            for (int i = 1; i <= 12; i++)
             {
                 cbbthang.Items.Add(i);
             }
-            
+
         }
 
         private void dataGRidView_Paint(object sender, DataGridViewRowPrePaintEventArgs e)
@@ -35,36 +35,36 @@ namespace DangNhap
 
         private void Btn_xem_Click(object sender, EventArgs e)
         {
-            
-               try
-                {
+
+            try
+            {
                 SqlConnection con = new SqlConnection();
                 con = cn.GetConnection();
                 SqlCommand cmd = new SqlCommand();
-                    cmd.CommandText = "XEM_HOCPHI";
-                    cmd.CommandType = CommandType.StoredProcedure;                   
-                    cmd.Parameters.Add(new SqlParameter("@Ten", email));
-                    cmd.Parameters.Add(new SqlParameter("@NAM", cbbnam.SelectedItem.ToString()));
-                    cmd.Parameters.Add(new SqlParameter("@THANG", cbbthang.SelectedItem.ToString()));
-                    cmd.Connection = con;
-                    con.Open();
-                    DataTable dt = new DataTable();
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(dt);
-                    dataviewHP.DataSource = dt;
-                    con.Close();
-                    TBtenLMH.Text = dataviewHP.Rows[0].Cells["monhoc"].Value.ToString();
-                    TB_Sotien.Text = dataviewHP.Rows[0].Cells["Sotientiet"].Value.ToString();
-                    TB_Sotiet.Text = dataviewHP.Rows[0].Cells["Sotietdihoc"].Value.ToString();
-                    txtTinhTrang.Text = dataviewHP.Rows[0].Cells["TinhTrangDong"].Value.ToString();
-                    
-                   
-                }
-                catch
-                {
-                    MessageBox.Show("Vui lòng kiểm tra lại thông tin!");
-                }
-           
+                cmd.CommandText = "XEM_HOCPHI";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@Ten", email));
+                cmd.Parameters.Add(new SqlParameter("@NAM", cbbnam.SelectedItem.ToString()));
+                cmd.Parameters.Add(new SqlParameter("@THANG", cbbthang.SelectedItem.ToString()));
+                cmd.Connection = con;
+                con.Open();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                dataviewHP.DataSource = dt;
+                con.Close();
+                TBtenLMH.Text = dataviewHP.Rows[0].Cells["monhoc"].Value.ToString();
+                TB_Sotien.Text = dataviewHP.Rows[0].Cells["Sotientiet"].Value.ToString();
+                TB_Sotiet.Text = dataviewHP.Rows[0].Cells["Sotietdihoc"].Value.ToString();
+                txtTinhTrang.Text = dataviewHP.Rows[0].Cells["TinhTrangDong"].Value.ToString();
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại thông tin!");
+            }
+
         }
 
         private void DataviewHP_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -75,13 +75,13 @@ namespace DangNhap
                 TBtenLMH.Text = row.Cells["monhoc"].Value.ToString();
                 TB_Sotien.Text = row.Cells["Sotientiet"].Value.ToString();
                 TB_Sotiet.Text = row.Cells["Sotietdihoc"].Value.ToString();
-                txtTinhTrang.Text = row.Cells["TinhTrangDong"].Value.ToString();          
+                txtTinhTrang.Text = row.Cells["TinhTrangDong"].Value.ToString();
             }
         }
 
         private void Cbbthang_SelectedValueChanged(object sender, EventArgs e)
         {
-            for(int i= 2020; i <= 2030; i++)
+            for (int i = 2020; i <= 2030; i++)
             {
                 cbbnam.Items.Add(i);
             }
@@ -117,6 +117,11 @@ namespace DangNhap
 
         private void Btn_BuoiNghi_Click(object sender, EventArgs e)
         {
+            if (cbbthang.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng nhập thông tin!");
+                return;
+            }
             try
             {
                 NghiHoc NH = new NghiHoc();
@@ -125,7 +130,7 @@ namespace DangNhap
                 NH.mail = this.email;
                 NH.ShowDialog();
             }
-            catch
+            catch (NullReferenceException ex)
             {
                 MessageBox.Show("Cần xem chi tiết học phí trước!");
             }
