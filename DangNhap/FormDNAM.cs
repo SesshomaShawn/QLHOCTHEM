@@ -349,5 +349,9 @@ namespace DangNhap
         {
             btn_logout.BackColor = System.Drawing.Color.White;
         }
+
+        private void button5_MouseHover(object sender, EventArgs e)
+        {
+        }
     }
 }

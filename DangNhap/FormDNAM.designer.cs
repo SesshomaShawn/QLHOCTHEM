@@ -117,7 +117,8 @@
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Size = new System.Drawing.Size(229, 44);
             this.btn_logout.TabIndex = 22;
-            this.btn_logout.Text = "      Đăng xuất ";
+            this.btn_logout.Text = "    Đăng xuất ";
+            this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
@@ -137,7 +138,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(229, 44);
             this.button1.TabIndex = 20;
-            this.button1.Text = "      Thống kê";
+            this.button1.Text = "   Thống kê";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -157,7 +158,7 @@
             this.btn_SaoLuu.Name = "btn_SaoLuu";
             this.btn_SaoLuu.Size = new System.Drawing.Size(229, 44);
             this.btn_SaoLuu.TabIndex = 16;
-            this.btn_SaoLuu.Text = "      Sao lưu ";
+            this.btn_SaoLuu.Text = "   Sao lưu ";
             this.btn_SaoLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_SaoLuu.UseVisualStyleBackColor = false;
             this.btn_SaoLuu.Click += new System.EventHandler(this.btn_SaoLuu_Click);
@@ -177,7 +178,7 @@
             this.btnHocSinh.Name = "btnHocSinh";
             this.btnHocSinh.Size = new System.Drawing.Size(229, 44);
             this.btnHocSinh.TabIndex = 14;
-            this.btnHocSinh.Text = "       Học sinh";
+            this.btnHocSinh.Text = "   Học sinh";
             this.btnHocSinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHocSinh.UseVisualStyleBackColor = false;
             this.btnHocSinh.Click += new System.EventHandler(this.btnHocSinh_Click);
@@ -321,7 +322,7 @@
             this.XemLichHoc.Name = "XemLichHoc";
             this.XemLichHoc.Size = new System.Drawing.Size(229, 44);
             this.XemLichHoc.TabIndex = 19;
-            this.XemLichHoc.Text = "    Lịch học ";
+            this.XemLichHoc.Text = "   Lịch học ";
             this.XemLichHoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.XemLichHoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.XemLichHoc.UseVisualStyleBackColor = false;
@@ -342,7 +343,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(229, 44);
             this.button6.TabIndex = 18;
-            this.button6.Text = "     Học phí   ";
+            this.button6.Text = "   Học phí   ";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = false;
@@ -363,7 +364,7 @@
             this.btnGiaoVien.Name = "btnGiaoVien";
             this.btnGiaoVien.Size = new System.Drawing.Size(229, 44);
             this.btnGiaoVien.TabIndex = 15;
-            this.btnGiaoVien.Text = "    Giáo viên";
+            this.btnGiaoVien.Text = "   Giáo viên";
             this.btnGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGiaoVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGiaoVien.UseVisualStyleBackColor = false;
@@ -384,13 +385,14 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(229, 44);
             this.button5.TabIndex = 17;
-            this.button5.Text = "    Lương    ";
+            this.button5.Text = "   Lương    ";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
             this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
             // 
             // pictureBox2
             // 

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiaoVien));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -152,7 +152,7 @@
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Size = new System.Drawing.Size(229, 50);
             this.btn_logout.TabIndex = 24;
-            this.btn_logout.Text = "   Đăng xuất";
+            this.btn_logout.Text = "   Đăng xuất     ";
             this.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
@@ -173,7 +173,7 @@
             this.btn_TrangChu.Name = "btn_TrangChu";
             this.btn_TrangChu.Size = new System.Drawing.Size(229, 50);
             this.btn_TrangChu.TabIndex = 4;
-            this.btn_TrangChu.Text = "   Trang chủ";
+            this.btn_TrangChu.Text = "   Trang chủ       ";
             this.btn_TrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_TrangChu.UseVisualStyleBackColor = false;
             this.btn_TrangChu.Click += new System.EventHandler(this.btn_TrangChu_Click);
@@ -194,7 +194,7 @@
             this.btn_DoiMK.Name = "btn_DoiMK";
             this.btn_DoiMK.Size = new System.Drawing.Size(229, 50);
             this.btn_DoiMK.TabIndex = 9;
-            this.btn_DoiMK.Text = "Đổi mật khẩu";
+            this.btn_DoiMK.Text = "   Đổi mật khẩu";
             this.btn_DoiMK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_DoiMK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_DoiMK.UseVisualStyleBackColor = false;
@@ -280,7 +280,7 @@
             this.btn_XemLichDay.Name = "btn_XemLichDay";
             this.btn_XemLichDay.Size = new System.Drawing.Size(229, 50);
             this.btn_XemLichDay.TabIndex = 8;
-            this.btn_XemLichDay.Text = "Xem lịch dạy";
+            this.btn_XemLichDay.Text = "   Xem lịch dạy";
             this.btn_XemLichDay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_XemLichDay.UseVisualStyleBackColor = false;
             this.btn_XemLichDay.Click += new System.EventHandler(this.btn_XemLichDay_Click);
@@ -290,7 +290,7 @@
             // 
             // btn_XemLuong
             // 
-            this.btn_XemLuong.BackColor = System.Drawing.Color.White;
+            this.btn_XemLuong.BackColor = System.Drawing.Color.LightGray;
             this.btn_XemLuong.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_XemLuong.FlatAppearance.BorderSize = 0;
             this.btn_XemLuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -302,7 +302,7 @@
             this.btn_XemLuong.Name = "btn_XemLuong";
             this.btn_XemLuong.Size = new System.Drawing.Size(229, 50);
             this.btn_XemLuong.TabIndex = 7;
-            this.btn_XemLuong.Text = "  Xem lương";
+            this.btn_XemLuong.Text = "   Xem lương  ";
             this.btn_XemLuong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_XemLuong.UseVisualStyleBackColor = false;
             this.btn_XemLuong.Click += new System.EventHandler(this.btn_XemLuong_Click);
@@ -584,14 +584,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewHienThiLuong.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewHienThiLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHienThiLuong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaPL,
@@ -605,8 +605,8 @@
             this.dataGridViewHienThiLuong.Name = "dataGridViewHienThiLuong";
             this.dataGridViewHienThiLuong.ReadOnly = true;
             this.dataGridViewHienThiLuong.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewHienThiLuong.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewHienThiLuong.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewHienThiLuong.RowTemplate.Height = 24;
             this.dataGridViewHienThiLuong.Size = new System.Drawing.Size(1082, 436);
             this.dataGridViewHienThiLuong.TabIndex = 0;

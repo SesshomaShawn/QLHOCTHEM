@@ -66,7 +66,7 @@
             this.btn_TrangChu.Name = "btn_TrangChu";
             this.btn_TrangChu.Size = new System.Drawing.Size(226, 45);
             this.btn_TrangChu.TabIndex = 4;
-            this.btn_TrangChu.Text = "        Trang chủ";
+            this.btn_TrangChu.Text = "  Trang chủ           ";
             this.btn_TrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_TrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_TrangChu.UseVisualStyleBackColor = false;
@@ -96,7 +96,7 @@
             this.btn_hocphi.Name = "btn_hocphi";
             this.btn_hocphi.Size = new System.Drawing.Size(226, 50);
             this.btn_hocphi.TabIndex = 7;
-            this.btn_hocphi.Text = "Tình trạng học phí";
+            this.btn_hocphi.Text = "  Tình trạng học phí";
             this.btn_hocphi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_hocphi.UseVisualStyleBackColor = false;
             this.btn_hocphi.Click += new System.EventHandler(this.btn_hocphi_Click);
@@ -115,7 +115,7 @@
             this.btn_Xemlichhoc.Name = "btn_Xemlichhoc";
             this.btn_Xemlichhoc.Size = new System.Drawing.Size(226, 50);
             this.btn_Xemlichhoc.TabIndex = 8;
-            this.btn_Xemlichhoc.Text = "     Xem lịch học";
+            this.btn_Xemlichhoc.Text = "  Xem lịch học      ";
             this.btn_Xemlichhoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Xemlichhoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Xemlichhoc.UseVisualStyleBackColor = false;
@@ -263,7 +263,7 @@
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Size = new System.Drawing.Size(226, 45);
             this.btn_logout.TabIndex = 23;
-            this.btn_logout.Text = "       Đăng xuất";
+            this.btn_logout.Text = "  Đăng xuất          ";
             this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_logout.UseVisualStyleBackColor = false;
@@ -283,7 +283,7 @@
             this.btn_DoiMK.Name = "btn_DoiMK";
             this.btn_DoiMK.Size = new System.Drawing.Size(226, 45);
             this.btn_DoiMK.TabIndex = 9;
-            this.btn_DoiMK.Text = "    Đổi mật khẩu";
+            this.btn_DoiMK.Text = "  Đổi mật khẩu    ";
             this.btn_DoiMK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_DoiMK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_DoiMK.UseVisualStyleBackColor = false;
