@@ -181,3 +181,131 @@ XEM_HOCPHI 'DoThanhLong@gmail.com', '4', '2021'
 GO
 
 drop proc NGHI_HOC
+go
+create proc [dbo].[cbb_HS2] (@MaHS nchar(10))
+as
+begin
+	select TenLMH from LOPHOC
+	where TenLMH not in (select distinct LOPHOC.TenLMH from LOPHOC, LICHHOC, DIEMDANH
+	where DIEMDANH.MaLichHoc = LICHHOC.MaLichHoc
+	and LICHHOC.MaLMH = LOPHOC.MALMH
+	and DIEMDANH.MaHS = @MaHS)
+end
+GO
+CREATE PROCEDURE [dbo].[cbb_HS1] (@MaHS NCHAR(10)) AS
+BEGIN
+    select distinct LOPHOC.TenLMH from LOPHOC, LICHHOC, DIEMDANH
+	where DIEMDANH.MaLichHoc = LICHHOC.MaLichHoc
+	and LICHHOC.MaLMH = LOPHOC.MALMH
+	and DIEMDANH.MaHS = @MaHS
+end
+GO
+
+create proc [dbo].[XemLichHoc_HS1] (@MaHS char(10), @TenLMH nvarchar(30))
+as
+begin
+
+select LICHHOC.MaLichHoc, LOPHOC.MALMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+from LICHHOC, GIAOVIEN, DIEMDANH, LOPHOC
+where DIEMDANH.MaLichHoc = LICHHOC.MaLichHoc
+and LOPHOC.MALMH = LICHHOC.MaLMH
+and LOPHOC.MaGV = GIAOVIEN.MaGV
+and DIEMDANH.MaHS = @MaHS
+and LOPHOC.TenLMH = @TenLMH
+end
+GO
+
+create proc [dbo].[XemLichHoc_HS2] ( @TenLMH nvarchar(30))
+as
+begin
+
+select LICHHOC.MaLichHoc, LOPHOC.MALMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+from LICHHOC, GIAOVIEN, LOPHOC
+where LOPHOC.MALMH = LICHHOC.MaLMH
+and LOPHOC.MaGV = GIAOVIEN.MaGV
+and LOPHOC.TenLMH = N'Hóa 12_1'--@TenLMH
+end
+GO
+
+-------------------------------------------------------------------------------
+create proc Search_lichhoc (@MaHS char(10),@day1 date, @day2 date)
+as 
+begin
+	SELECT Lichhoc.MaLichHoc, TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV, LOPHOC.MALMH
+	FROM LICHHOC, LOPHOC, GIAOVIEN, DIEMDANH
+	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV AND GIAOVIEN.MaGV = LICHHOC.MaGV AND LICHHOC.MaLMH = dbo.LOPHOC.MaLMH AND LICHHOC.MaGV = dbo.LOPHOC.MaGV
+          and DiemDanh.MaLichHoc = LICHHOC.MaLichHoc
+		  and DIEMDANH.MaHS = @MaHS --and DiemDanh.DiemDanh = 'Có'
+		  and NgayHoc between @day1 and @day2
+end
+exec Search_lichhoc 'HS039','2021-02-04', '2021-05-11'
+drop proc Search_lichhoc
+drop proc NGHI_HOC
+
+create proc Search_lichhoc_theoNgay (@MaHS char(10),@day date)
+as 
+begin
+	SELECT Lichhoc.MaLichHoc, TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV, LOPHOC.MALMH
+	FROM LICHHOC, LOPHOC, GIAOVIEN, DIEMDANH
+	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV AND GIAOVIEN.MaGV = LICHHOC.MaGV AND LICHHOC.MaLMH = dbo.LOPHOC.MaLMH AND LICHHOC.MaGV = dbo.LOPHOC.MaGV
+          and DiemDanh.MaLichHoc = LICHHOC.MaLichHoc
+		  and DIEMDANH.MaHS = @MaHS 
+		  and NgayHoc = @day
+end
+exec Search_lichhoc_theoNgay 'HS039','2021-02-17'
+drop proc Search_lichhoc_theoNgay
+-- Xem lớp đã đăng ký
+  CREATE PROC cbb_HS1 (@MaHS NCHAR(10)) AS
+BEGIN
+    SELECT DISTINCT dbo.LOPHOC.TenLMH FROM dbo.DIEMDANH, dbo.LOPHOC, LICHHOC
+	WHERE LICHHOC.MaLichHoc = DIEMDANH.MaLichHoc
+	AND LICHHOC.MaLMH = LOPHOC.MALMH
+	AND dbo.DIEMDANH.MaHS = @MaHS
+END
+GO
+
+  EXEC cbb_HS1 N'HS004'
+
+----
+
+---- Xem lịch học các lớp đã đăng ký
+CREATE PROC XemLichHoc_HS1 (@MaHS CHAR(10), @TenLMH NvarCHAR(50)) AS
+BEGIN
+    SELECT LICHHOC.MaLichHoc, LOPHOC.TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+	FROM dbo.LICHHOC, dbo.LOPHOC, DIEMDANH, GIAOVIEN
+	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV
+	      AND LICHHOC.MaLMH = LOPHOC.MALMH
+		  AND LICHHOC.MaLichHoc = dbo.DIEMDANH.MaLichHoc
+	      AND DIEMDANH.MaHS = @MaHS
+		  AND dbo.LOPHOC.TenLMH = @TenLMH
+	
+END
+go
+
+ EXEC XemLichHoc_HS1 N'HS006', N'Hóa 10'
+
+ -- Xem các lớp chưa đăng ký 
+ CREATE PROC cbb_HS2 (@MaHS NCHAR(10)) AS
+BEGIN
+    SELECT TenLMH  FROM LOPHOC
+	WHERE TenLMH NOT IN ( SELECT DISTINCT dbo.LOPHOC.TenLMH FROM dbo.DIEMDANH, dbo.LOPHOC, LICHHOC
+	WHERE LICHHOC.MaLichHoc = DIEMDANH.MaLichHoc
+	AND LICHHOC.MaLMH = LOPHOC.MALMH
+	AND dbo.DIEMDANH.MaHS = @MaHS )
+END
+GO
+  
+  EXEC cbb_HS2 N'HS004'
+
+---- xem lich học của các lớp chưa đăng ký 
+CREATE PROC XemLichHoc_HS2 (@TenLMH NvarCHAR(50)) AS
+BEGIN
+    SELECT LICHHOC.MaLichHoc, LOPHOC.TenLMH, NgayHoc, KipHoc, SoTiet, HoTenGV
+	FROM dbo.LICHHOC, dbo.LOPHOC, GIAOVIEN
+	WHERE GIAOVIEN.MaGV = dbo.LOPHOC.MaGV
+	      AND LICHHOC.MaLMH = LOPHOC.MALMH    
+		  AND dbo.LOPHOC.TenLMH = @TenLMH
+	
+END
+go
+  EXEC XemLichHoc_HS2 N'Hóa 10'

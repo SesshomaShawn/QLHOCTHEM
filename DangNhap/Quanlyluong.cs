@@ -21,7 +21,9 @@ namespace DangNhap
         {
             cn = new Connection();
             InitializeComponent();
+            
         }
+       
 
         private void loadDSGV()
         {
@@ -46,6 +48,7 @@ namespace DangNhap
 
         private void Phieuluong_Load(object sender, EventArgs e)
         {
+            dgvDSGV.BorderStyle = BorderStyle.FixedSingle;
             dgvDSGV.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dgvDSGV.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvDSGV.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
@@ -56,6 +59,19 @@ namespace DangNhap
             dgvDSGV.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
             dgvDSGV.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             dgvDSGV.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            /*
+             dataGridViewHienThiLuong.BorderStyle = BorderStyle.FixedSingle;
+            dataGridViewHienThiLuong.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridViewHienThiLuong.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewHienThiLuong.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dataGridViewHienThiLuong.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridViewHienThiLuong.BackgroundColor = Color.White;
+
+            dataGridViewHienThiLuong.EnableHeadersVisualStyles = false;
+            dataGridViewHienThiLuong.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dataGridViewHienThiLuong.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+             */
 
             loadDSGV();
 

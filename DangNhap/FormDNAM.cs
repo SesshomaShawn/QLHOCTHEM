@@ -14,9 +14,9 @@ namespace DangNhap
      {
           public FormDNAM()
           {
-            InitializeComponent();
-               MacDinh();
-            
+                InitializeComponent();
+                MacDinh();
+                
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -218,6 +218,136 @@ namespace DangNhap
             this.Hide();
             FormDN dn = new FormDN();
             dn.ShowDialog();
+        }
+
+        private void button5_MouseEnter(object sender, EventArgs e)
+        {
+            button5.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void button5_MouseLeave(object sender, EventArgs e)
+        {
+            button5.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btnGiaoVien_MouseEnter(object sender, EventArgs e)
+        {
+            btnGiaoVien.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btnGiaoVien_MouseLeave(object sender, EventArgs e)
+        {
+            btnGiaoVien.BackColor = System.Drawing.Color.White;
+        }
+
+        private void button6_MouseEnter(object sender, EventArgs e)
+        {
+            button6.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void button6_MouseLeave(object sender, EventArgs e)
+        {
+            button6.BackColor = System.Drawing.Color.White;
+        }
+
+        private void XemLichHoc_MouseEnter(object sender, EventArgs e)
+        {
+            XemLichHoc.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void XemLichHoc_MouseLeave(object sender, EventArgs e)
+        {
+            XemLichHoc.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btn_MathAD_MouseEnter(object sender, EventArgs e)
+        {
+            btn_MathAD.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btn_MathAD_MouseLeave(object sender, EventArgs e)
+        {
+            btn_MathAD.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btn_PhysicAD_MouseEnter(object sender, EventArgs e)
+        {
+            btn_PhysicAD.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btn_PhysicAD_MouseLeave(object sender, EventArgs e)
+        {
+            btn_PhysicAD.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btn_EnglishAD_MouseEnter(object sender, EventArgs e)
+        {
+            btn_EnglishAD.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btn_EnglishAD_MouseLeave(object sender, EventArgs e)
+        {
+            btn_EnglishAD.BackColor = System.Drawing.Color.White;
+        }
+
+        private void button9_MouseEnter(object sender, EventArgs e)
+        {
+            button9.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void button9_MouseLeave(object sender, EventArgs e)
+        {
+            button9.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btn_ChemistryAD_MouseEnter(object sender, EventArgs e)
+        {
+            btn_ChemistryAD.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btn_ChemistryAD_MouseLeave(object sender, EventArgs e)
+        {
+            btn_ChemistryAD.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btnHocSinh_MouseEnter(object sender, EventArgs e)
+        {
+            btnHocSinh.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btnHocSinh_MouseLeave(object sender, EventArgs e)
+        {
+            btnHocSinh.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btn_SaoLuu_MouseEnter(object sender, EventArgs e)
+        {
+            btn_SaoLuu.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btn_SaoLuu_MouseLeave(object sender, EventArgs e)
+        {
+            btn_SaoLuu.BackColor = System.Drawing.Color.White;
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = System.Drawing.Color.White;
+        }
+
+        private void btn_logout_MouseEnter(object sender, EventArgs e)
+        {
+            btn_logout.BackColor = System.Drawing.Color.LightBlue;
+        }
+
+        private void btn_logout_MouseLeave(object sender, EventArgs e)
+        {
+            btn_logout.BackColor = System.Drawing.Color.White;
         }
     }
 }

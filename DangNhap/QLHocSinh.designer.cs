@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLHocSinh));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -67,18 +68,18 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1136, 223);
+            this.panel1.Size = new System.Drawing.Size(1372, 238);
             this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.BackColor = System.Drawing.Color.Linen;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.pictureBox2);
@@ -86,9 +87,10 @@
             this.panel4.Controls.Add(this.buttonSua);
             this.panel4.Controls.Add(this.buttonThem);
             this.panel4.Controls.Add(this.buttonXoa);
-            this.panel4.Location = new System.Drawing.Point(56, 34);
+            this.panel4.ForeColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(39, 45);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(474, 151);
+            this.panel4.Size = new System.Drawing.Size(473, 171);
             this.panel4.TabIndex = 3;
             // 
             // label4
@@ -105,7 +107,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::DangNhap.Properties.Resources.edit;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = global::DangNhap.Properties.Resources.remove_user;
             this.pictureBox3.Location = new System.Drawing.Point(326, 77);
             this.pictureBox3.Name = "pictureBox3";
@@ -115,7 +117,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DangNhap.Properties.Resources.remove_user;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = global::DangNhap.Properties.Resources.remove_user;
             this.pictureBox2.Location = new System.Drawing.Point(181, 77);
             this.pictureBox2.Name = "pictureBox2";
@@ -125,7 +127,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DangNhap.Properties.Resources.add_user;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = global::DangNhap.Properties.Resources.add_user;
             this.pictureBox1.Location = new System.Drawing.Point(32, 77);
             this.pictureBox1.Name = "pictureBox1";
@@ -135,7 +137,8 @@
             // 
             // buttonSua
             // 
-            this.buttonSua.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSua.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSua.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSua.ForeColor = System.Drawing.Color.Black;
             this.buttonSua.Location = new System.Drawing.Point(364, 77);
@@ -148,7 +151,8 @@
             // 
             // buttonThem
             // 
-            this.buttonThem.BackColor = System.Drawing.Color.Transparent;
+            this.buttonThem.BackColor = System.Drawing.Color.LimeGreen;
+            this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThem.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThem.ForeColor = System.Drawing.Color.Black;
             this.buttonThem.Location = new System.Drawing.Point(70, 77);
@@ -161,7 +165,8 @@
             // 
             // buttonXoa
             // 
-            this.buttonXoa.BackColor = System.Drawing.Color.Transparent;
+            this.buttonXoa.BackColor = System.Drawing.Color.IndianRed;
+            this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonXoa.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoa.ForeColor = System.Drawing.Color.Black;
             this.buttonXoa.Location = new System.Drawing.Point(219, 77);
@@ -175,16 +180,15 @@
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.BackColor = System.Drawing.Color.Linen;
             this.panel2.Controls.Add(this.textBoxTimKiem);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.comboBoxLoaiTimKiem);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(542, 34);
+            this.panel2.Location = new System.Drawing.Point(534, 45);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(575, 151);
+            this.panel2.Size = new System.Drawing.Size(552, 171);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -253,6 +257,7 @@
             // 
             this.dataGridViewHS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewHS.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -270,13 +275,14 @@
             this.GioiTinh,
             this.Email,
             this.MatKhau});
-            this.dataGridViewHS.Location = new System.Drawing.Point(16, 229);
+            this.dataGridViewHS.Location = new System.Drawing.Point(25, 265);
             this.dataGridViewHS.Name = "dataGridViewHS";
             this.dataGridViewHS.RowHeadersVisible = false;
             this.dataGridViewHS.RowHeadersWidth = 51;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewHS.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewHS.Size = new System.Drawing.Size(1102, 450);
+            this.dataGridViewHS.Size = new System.Drawing.Size(1082, 436);
             this.dataGridViewHS.TabIndex = 0;
             this.dataGridViewHS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHS_CellClick);
             this.dataGridViewHS.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewHS_CellContentDoubleClick);
@@ -343,11 +349,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.dataGridViewHS);
             this.Controls.Add(this.panel1);
+            this.Location = new System.Drawing.Point(226, -1);
             this.Name = "QLHocSinh";
-            this.Size = new System.Drawing.Size(1136, 693);
+            this.Size = new System.Drawing.Size(1372, 801);
             this.Load += new System.EventHandler(this.QLHocSinh_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
