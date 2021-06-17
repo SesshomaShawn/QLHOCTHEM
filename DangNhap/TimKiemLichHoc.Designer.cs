@@ -76,37 +76,41 @@ namespace DangNhap
             this.panelChitiet.Controls.Add(this.label2);
             this.panelChitiet.Controls.Add(this.label1);
             this.panelChitiet.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelChitiet.Location = new System.Drawing.Point(25, 16);
+            this.panelChitiet.Location = new System.Drawing.Point(33, 20);
+            this.panelChitiet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelChitiet.Name = "panelChitiet";
-            this.panelChitiet.Size = new System.Drawing.Size(671, 218);
+            this.panelChitiet.Size = new System.Drawing.Size(895, 268);
             this.panelChitiet.TabIndex = 0;
             // 
             // textBoxSoTiet
             // 
             this.textBoxSoTiet.Enabled = false;
-            this.textBoxSoTiet.Location = new System.Drawing.Point(442, 118);
+            this.textBoxSoTiet.Location = new System.Drawing.Point(589, 145);
+            this.textBoxSoTiet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSoTiet.Name = "textBoxSoTiet";
             this.textBoxSoTiet.ReadOnly = true;
-            this.textBoxSoTiet.Size = new System.Drawing.Size(209, 29);
+            this.textBoxSoTiet.Size = new System.Drawing.Size(277, 35);
             this.textBoxSoTiet.TabIndex = 13;
             // 
             // textBoxKip
             // 
             this.textBoxKip.Enabled = false;
-            this.textBoxKip.Location = new System.Drawing.Point(442, 48);
+            this.textBoxKip.Location = new System.Drawing.Point(589, 59);
+            this.textBoxKip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxKip.Name = "textBoxKip";
             this.textBoxKip.ReadOnly = true;
-            this.textBoxKip.Size = new System.Drawing.Size(209, 29);
+            this.textBoxKip.Size = new System.Drawing.Size(277, 35);
             this.textBoxKip.TabIndex = 12;
             // 
             // textBoxMaLop
             // 
             this.textBoxMaLop.Enabled = false;
             this.textBoxMaLop.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMaLop.Location = new System.Drawing.Point(110, 118);
+            this.textBoxMaLop.Location = new System.Drawing.Point(147, 145);
+            this.textBoxMaLop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMaLop.Name = "textBoxMaLop";
             this.textBoxMaLop.ReadOnly = true;
-            this.textBoxMaLop.Size = new System.Drawing.Size(209, 29);
+            this.textBoxMaLop.Size = new System.Drawing.Size(277, 35);
             this.textBoxMaLop.TabIndex = 11;
             // 
             // textBoxHoTen
@@ -114,18 +118,20 @@ namespace DangNhap
             this.textBoxHoTen.Enabled = false;
             this.textBoxHoTen.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxHoTen.ForeColor = System.Drawing.Color.Black;
-            this.textBoxHoTen.Location = new System.Drawing.Point(110, 48);
+            this.textBoxHoTen.Location = new System.Drawing.Point(147, 59);
+            this.textBoxHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxHoTen.Name = "textBoxHoTen";
             this.textBoxHoTen.ReadOnly = true;
-            this.textBoxHoTen.Size = new System.Drawing.Size(209, 29);
+            this.textBoxHoTen.Size = new System.Drawing.Size(277, 35);
             this.textBoxHoTen.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(335, 121);
+            this.label4.Location = new System.Drawing.Point(447, 149);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 34);
+            this.label4.Size = new System.Drawing.Size(135, 42);
             this.label4.TabIndex = 9;
             this.label4.Text = "Số tiết:";
             // 
@@ -133,9 +139,10 @@ namespace DangNhap
             // 
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(335, 51);
+            this.label3.Location = new System.Drawing.Point(447, 63);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 34);
+            this.label3.Size = new System.Drawing.Size(135, 42);
             this.label3.TabIndex = 9;
             this.label3.Text = "Kíp học:";
             // 
@@ -143,9 +150,10 @@ namespace DangNhap
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(3, 121);
+            this.label2.Location = new System.Drawing.Point(4, 149);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 34);
+            this.label2.Size = new System.Drawing.Size(135, 42);
             this.label2.TabIndex = 8;
             this.label2.Text = "Mã lớp:";
             // 
@@ -153,9 +161,10 @@ namespace DangNhap
             // 
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(3, 51);
+            this.label1.Location = new System.Drawing.Point(4, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 34);
+            this.label1.Size = new System.Drawing.Size(135, 42);
             this.label1.TabIndex = 7;
             this.label1.Text = "Họ tên GV:";
             // 
@@ -165,7 +174,9 @@ namespace DangNhap
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Lich.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -182,7 +193,9 @@ namespace DangNhap
             this.SoTiet,
             this.HoTenGV,
             this.MALMH});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -190,7 +203,10 @@ namespace DangNhap
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_Lich.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView_Lich.Location = new System.Drawing.Point(25, 265);
+
+            this.dataGridView_Lich.Location = new System.Drawing.Point(33, 326);
+            this.dataGridView_Lich.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.dataGridView_Lich.Name = "dataGridView_Lich";
             this.dataGridView_Lich.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -205,7 +221,7 @@ namespace DangNhap
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.dataGridView_Lich.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Lich.RowTemplate.Height = 24;
-            this.dataGridView_Lich.Size = new System.Drawing.Size(1082, 436);
+            this.dataGridView_Lich.Size = new System.Drawing.Size(1443, 537);
             this.dataGridView_Lich.TabIndex = 0;
             this.dataGridView_Lich.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Lich_CellClick);
             this.dataGridView_Lich.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Lich_CellContentClick);
@@ -214,6 +230,7 @@ namespace DangNhap
             // 
             this.MaLichHoc.DataPropertyName = "MaLichHoc";
             this.MaLichHoc.HeaderText = "Mã lịch học";
+            this.MaLichHoc.MinimumWidth = 6;
             this.MaLichHoc.Name = "MaLichHoc";
             this.MaLichHoc.ReadOnly = true;
             this.MaLichHoc.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -232,6 +249,7 @@ namespace DangNhap
             // 
             this.NgayHoc.DataPropertyName = "NgayHoc";
             this.NgayHoc.HeaderText = "Ngày học";
+            this.NgayHoc.MinimumWidth = 6;
             this.NgayHoc.Name = "NgayHoc";
             this.NgayHoc.ReadOnly = true;
             this.NgayHoc.Width = 170;
@@ -240,6 +258,7 @@ namespace DangNhap
             // 
             this.KipHoc.DataPropertyName = "KipHoc";
             this.KipHoc.HeaderText = "Kíp";
+            this.KipHoc.MinimumWidth = 6;
             this.KipHoc.Name = "KipHoc";
             this.KipHoc.ReadOnly = true;
             this.KipHoc.Width = 130;
@@ -248,6 +267,7 @@ namespace DangNhap
             // 
             this.SoTiet.DataPropertyName = "SoTiet";
             this.SoTiet.HeaderText = "Số tiết";
+            this.SoTiet.MinimumWidth = 6;
             this.SoTiet.Name = "SoTiet";
             this.SoTiet.ReadOnly = true;
             this.SoTiet.Width = 160;
@@ -256,6 +276,7 @@ namespace DangNhap
             // 
             this.HoTenGV.DataPropertyName = "HoTenGV";
             this.HoTenGV.HeaderText = "Họ tên GV";
+            this.HoTenGV.MinimumWidth = 6;
             this.HoTenGV.Name = "HoTenGV";
             this.HoTenGV.ReadOnly = true;
             this.HoTenGV.Width = 229;
@@ -264,18 +285,21 @@ namespace DangNhap
             // 
             this.MALMH.DataPropertyName = "MALMH";
             this.MALMH.HeaderText = "Mã lớp học";
+            this.MALMH.MinimumWidth = 6;
             this.MALMH.Name = "MALMH";
             this.MALMH.ReadOnly = true;
             this.MALMH.Visible = false;
+            this.MALMH.Width = 125;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.panelSearch);
             this.panel3.Controls.Add(this.panelChitiet);
-            this.panel3.Location = new System.Drawing.Point(25, 0);
+            this.panel3.Location = new System.Drawing.Point(33, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1081, 249);
+            this.panel3.Size = new System.Drawing.Size(1441, 306);
             this.panel3.TabIndex = 2;
             // 
             // panelSearch
@@ -287,9 +311,10 @@ namespace DangNhap
             this.panelSearch.Controls.Add(this.dtpDay1);
             this.panelSearch.Controls.Add(this.label6);
             this.panelSearch.Controls.Add(this.label5);
-            this.panelSearch.Location = new System.Drawing.Point(713, 16);
+            this.panelSearch.Location = new System.Drawing.Point(951, 20);
+            this.panelSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelSearch.Name = "panelSearch";
-            this.panelSearch.Size = new System.Drawing.Size(334, 218);
+            this.panelSearch.Size = new System.Drawing.Size(445, 268);
             this.panelSearch.TabIndex = 1;
             // 
             // button1
@@ -297,9 +322,11 @@ namespace DangNhap
             this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(134, 176);
+            this.button1.Location = new System.Drawing.Point(165, 212);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 29);
+            this.button1.Size = new System.Drawing.Size(100, 36);
             this.button1.TabIndex = 5;
             this.button1.Text = "Tìm";
             this.button1.UseVisualStyleBackColor = false;
@@ -310,9 +337,10 @@ namespace DangNhap
             this.dtpDay2.CustomFormat = "dd/MM/yyyy";
             this.dtpDay2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDay2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDay2.Location = new System.Drawing.Point(71, 127);
+            this.dtpDay2.Location = new System.Drawing.Point(95, 156);
+            this.dtpDay2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDay2.Name = "dtpDay2";
-            this.dtpDay2.Size = new System.Drawing.Size(200, 29);
+            this.dtpDay2.Size = new System.Drawing.Size(265, 35);
             this.dtpDay2.TabIndex = 4;
             // 
             // label7
@@ -320,9 +348,10 @@ namespace DangNhap
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(3, 133);
+            this.label7.Location = new System.Drawing.Point(4, 164);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 22);
+            this.label7.Size = new System.Drawing.Size(67, 28);
             this.label7.TabIndex = 3;
             this.label7.Text = "Đến: ";
             // 
@@ -331,17 +360,19 @@ namespace DangNhap
             this.dtpDay1.CustomFormat = "dd/MM/yyyy";
             this.dtpDay1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDay1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDay1.Location = new System.Drawing.Point(71, 75);
+            this.dtpDay1.Location = new System.Drawing.Point(95, 92);
+            this.dtpDay1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDay1.Name = "dtpDay1";
-            this.dtpDay1.Size = new System.Drawing.Size(200, 29);
+            this.dtpDay1.Size = new System.Drawing.Size(265, 35);
             this.dtpDay1.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 81);
+            this.label6.Location = new System.Drawing.Point(4, 100);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 23);
+            this.label6.Size = new System.Drawing.Size(63, 28);
             this.label6.TabIndex = 1;
             this.label6.Text = "Từ:";
             // 
@@ -349,24 +380,26 @@ namespace DangNhap
             // 
             this.label5.BackColor = System.Drawing.Color.LemonChiffon;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(99, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 34);
+            this.label5.Size = new System.Drawing.Size(177, 42);
             this.label5.TabIndex = 0;
             this.label5.Text = "Tìm kiếm";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TimKiemLichHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView_Lich);
             this.Location = new System.Drawing.Point(226, -1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TimKiemLichHoc";
-            this.Size = new System.Drawing.Size(1372, 801);
+            this.Size = new System.Drawing.Size(1829, 986);
             this.Load += new System.EventHandler(this.TimKiemLichHoc_Load_1);
             this.panelChitiet.ResumeLayout(false);
             this.panelChitiet.PerformLayout();

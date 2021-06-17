@@ -35,41 +35,43 @@ namespace DangNhap
 
         private void Btn_xem_Click(object sender, EventArgs e)
         {
-
-            try
+            if (!string.IsNullOrWhiteSpace(cbbnam.Text) && !string.IsNullOrWhiteSpace(cbbthang.Text))
             {
-                SqlConnection con = new SqlConnection();
-                con = cn.GetConnection();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "XEM_HOCPHI";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter("@Ten", email));
-                cmd.Parameters.Add(new SqlParameter("@NAM", cbbnam.SelectedItem.ToString()));
-                cmd.Parameters.Add(new SqlParameter("@THANG", cbbthang.SelectedItem.ToString()));
-                cmd.Connection = con;
-                con.Open();
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(dt);
-                dataviewHP.DataSource = dt;
-                con.Close();
-                if (dataviewHP.Rows[0].Cells["monhoc"].Value == null)
+ 
+                try
                 {
-                    MessageBox.Show(" Chưa cập nhật dữ liệu!");
-                    return;
+                    SqlConnection con = new SqlConnection();
+                    con = cn.GetConnection();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.CommandText = "XEM_HOCPHI";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(new SqlParameter("@Ten", email));
+                    cmd.Parameters.Add(new SqlParameter("@NAM", cbbnam.SelectedItem.ToString()));
+                    cmd.Parameters.Add(new SqlParameter("@THANG", cbbthang.SelectedItem.ToString()));
+                    cmd.Connection = con;
+                    con.Open();
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    dataviewHP.DataSource = dt;
+                    con.Close();
+                    TBtenLMH.Text = dataviewHP.Rows[0].Cells["monhoc"].Value.ToString();
+                    TB_Sotien.Text = dataviewHP.Rows[0].Cells["Sotientiet"].Value.ToString();
+                    TB_Sotiet.Text = dataviewHP.Rows[0].Cells["Sotietdihoc"].Value.ToString();
+                    txtTinhTrang.Text = dataviewHP.Rows[0].Cells["TinhTrangDong"].Value.ToString();
+
+
                 }
-                //TBtenLMH.Text = dataviewHP.Rows[0].Cells["monhoc"].Value.ToString();
-                TB_Sotien.Text = dataviewHP.Rows[0].Cells["Sotientiet"].Value.ToString();
-                TB_Sotiet.Text = dataviewHP.Rows[0].Cells["Sotietdihoc"].Value.ToString();
-                txtTinhTrang.Text = dataviewHP.Rows[0].Cells["TinhTrangDong"].Value.ToString();
-
-
+                catch
+                {
+                    MessageBox.Show("Vui lòng kiểm tra lại thông tin!");
+                }
+                
             }
-            catch
+            else
             {
-                MessageBox.Show("Vui lòng kiểm tra lại thông tin!");
+                MessageBox.Show("Vui lòng chọn thời gian!");
             }
-
         }
 
         private void DataviewHP_CellClick(object sender, DataGridViewCellEventArgs e)
